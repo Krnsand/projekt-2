@@ -14,6 +14,8 @@
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  max-width: 70%;
+  margin: 40px auto;
 }
 .current-puppies .sub-text {
   font-size: 0.9rem;
