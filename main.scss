@@ -1,0 +1,116 @@
+$font-stack: "Roboto", sans-serif;
+$primary-color: #B38A4C;
+$secondary-color: #FFF7C8;
+$dark-green: #22333B;
+$dark-red: #53131E;
+$rose-ebony: #5A464C;
+
+.current-puppies {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 40px auto;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-family: $font-stack;
+        font-weight: 300;
+    }
+
+    .sub-text {
+        font-size: 0.9rem;
+    }
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    gap: 20px;
+
+    .img-and-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            border-radius: 15px;
+            position: relative;
+        }
+
+        span {
+            background-color: $secondary-color;
+            color:#53131E;
+            padding: 20px;
+            border-radius: 15px;
+            z-index: 2;
+            position: absolute;
+            width: calc((980px - 20px) / 2);
+            opacity: 0.8;
+            font-family: $font-stack;
+            font-weight:600; 
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.wala-cert {
+    margin: auto;
+    width: 70%;
+
+    div { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+        img {
+            margin: 60px;
+        }
+
+        p {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 1.5rem;
+            max-width: 30rem;
+        }
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(217, 217, 217);
+    
+
+    .quote {
+        width: 70%;
+
+        p {
+            color: $dark-red;
+            font-family: $font-stack;
+            font-size: 2rem;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}
