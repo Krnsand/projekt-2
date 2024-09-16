@@ -136,7 +136,7 @@
 }
 .card .card-body a[role=button] {
   position: absolute;
-  bottom: 15px;
+  bottom: 40px;
   background-color: #53131E;
   width: 50%;
   border: none;
