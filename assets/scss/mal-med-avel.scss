@@ -1,0 +1,76 @@
+$font-title: "Roboto", sans-serif;
+$font-body: "Poppins", sans-serif;
+$primary-color: #B38A4C;
+$secondary-color: #FFF7C8;
+$dark-green: #22333B;
+$dark-red: #53131E;
+$rose-ebony: #5A464C;
+
+.page-title {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+.breeding-intro {
+    width: 60%;
+    margin: auto;
+
+    h1 {
+        color: $dark-red;
+        font-family: $font-title;
+        font-size: 2.5rem;
+        margin-top: 60px;
+    }
+
+    p {
+        font-family: $font-body;
+        font-size: 1rem;
+    }
+}
+
+.health-tests {
+    width: 60%;
+    margin: auto;
+
+    .issue {
+        
+        h2 {
+            color: $primary-color;
+            font-family: $font-title;
+            font-size: 2rem;
+            margin-top: 60px;
+        }
+
+        .expand-button {
+            background-color: $primary-color;
+            color: $dark-red;
+            cursor: pointer;
+            padding: 18px;
+            margin-left: 22px;
+            width: 60%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .description {
+            padding: 0;
+            display: none;
+            overflow: hidden;
+            background-color: $secondary-color;
+        }
+    }
+}

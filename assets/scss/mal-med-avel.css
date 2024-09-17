@@ -1,0 +1,59 @@
+.page-title {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-title img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.breeding-intro {
+  width: 60%;
+  margin: auto;
+}
+.breeding-intro h1 {
+  color: #53131E;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 60px;
+}
+.breeding-intro p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.health-tests {
+  width: 60%;
+  margin: auto;
+}
+.health-tests .issue h2 {
+  color: #B38A4C;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+.health-tests .issue .expand-button {
+  background-color: #B38A4C;
+  color: #53131E;
+  cursor: pointer;
+  padding: 18px;
+  margin-left: 22px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.health-tests .issue .description {
+  padding: 0;
+  display: none;
+  overflow: hidden;
+  background-color: #FFF7C8;
+}/*# sourceMappingURL=mal-med-avel.css.map */
