@@ -1,0 +1,25 @@
+$font-title: "Roboto", sans-serif;
+$font-body: "Poppins", sans-serif;
+$primary-color: #b38a4c;
+$secondary-color: #fff7c8;
+$dark-green: #22333b;
+$dark-red: #53131e;
+$rose-ebony: #5a464c;
+
+.puppy-image-container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  // height: 100vh;
+
+  .puppy-form-img {
+    flex: 0 0 50%;
+  }
+
+  .puppy-form-img img {
+    // max-width: 100%;
+    // max-height: 100%;
+    // object-fit: cover;
+  }
+}
