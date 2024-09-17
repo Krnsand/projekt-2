@@ -1,0 +1,9 @@
+.puppy-image-container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+}
+.puppy-image-container .puppy-form-img {
+  flex: 0 0 50%;
+}/*# sourceMappingURL=intresse.css.map */
