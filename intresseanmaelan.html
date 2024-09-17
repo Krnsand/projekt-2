@@ -25,14 +25,14 @@
     />
     <!-- <link href="main.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/scss/intresse.css" type="text/scss" />
+    <link rel="stylesheet" href="assets/scss/intresse.css" type="text/css" />
     <title>101 Labradoodle</title>
   </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img
                 src="assets/images/logo.png"
                 alt="101Labradoodles logga"
@@ -54,7 +54,7 @@
                 <li class="nav-item dropdown"></li>
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="index.html"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -108,6 +108,28 @@
                     händer och vi är noga med att våra valpköpare har en plan kring sin vardag med 
                     den nya familjemedlemmen. Labradoodle är mycket sociala och familjekära.</p>
                   </div>
+                  <div class="form-container">
+                  <form action="/submit" method="POST">
+                   
+                    <label for="firstname" class="form-titles">Förnamn / Efternamn:</label><br>
+                    <input type="text" id="firstname-lastname" name="firstname/lastname" required><br>
+            
+                   
+                    <label for="description" class="form-titles">Berätta om hur din vardag ser ut:</label><br>
+                    <textarea id="description" name="description" rows="3" cols="50" required></textarea><br>
+            
+                  
+                    <label for="email" class="form-titles">E-post:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+            
+                
+                    <label for="phone" class="form-titles">Telefonnummer:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+            
+                   
+                    <input type="submit" value="Skicka">
+                </form>
+              </div>
             </div>
         </section>
       </main>
