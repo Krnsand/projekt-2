@@ -17,6 +17,12 @@ header {
   margin-top: 1rem;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
 .navbar {
   padding: 0%;
 }
