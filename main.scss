@@ -1,0 +1,240 @@
+$font-stack: "Roboto", sans-serif;
+$primary-color: #B38A4C;
+$secondary-color: #FFF7C8;
+$dark-green: #22333B;
+$dark-red: #53131E;
+$rose-ebony: #5A464C;
+
+.current-puppies {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 40px auto;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-family: $font-stack;
+        font-weight: 300;
+    }
+
+    .sub-text {
+        font-size: 0.9rem;
+    } 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    gap: 40px;
+
+    .img-and-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            border-radius: 15px;
+            position: relative;
+        }
+
+        span {
+            background-color: $secondary-color;
+            color:#53131E;
+            padding: 20px;
+            border-radius: 15px;
+            z-index: 2;
+            position: absolute;
+            width: calc((980px - 20px) / 2);
+            opacity: 0.8;
+            font-family: $font-stack;
+            font-weight:600; 
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.wala-cert {
+    margin: auto;
+    width: 70%;
+
+    div { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+        img {
+            margin: 60px;
+        }
+
+        p {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 1.5rem;
+            max-width: 30rem;
+        }
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 400px;
+    background-color: #ebeaea;
+    
+
+    .quote {
+        width: 70%;
+
+        p {
+            color: $dark-red;
+            font-family: $font-stack;
+            font-size: 2rem;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}
+
+.interest-and-plans {
+    width: 70%;
+    margin: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px;
+}
+
+.card {
+    width: 50%;
+    border-width: 0;
+
+    img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+        background-color: #ebeaea;
+        text-align: center;
+        border-radius: 0px 0px 15px 15px;
+        height: 20rem;
+
+        h2 {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 2rem;
+            font-weight: 300;
+            margin: 40px;
+        }
+        
+        p {
+            color: $dark-green;
+            font-family: $font-stack;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 20px auto;
+            max-width: 20rem;
+        }
+        a[role=button]{
+            position: absolute;
+            bottom: 40px;
+            background-color: $dark-red;
+            width: 50%;
+            border: none;
+            font-size: 1em;
+            border-radius: 2em;
+            padding: 15px 15px;
+            margin: auto;
+            left: 50%;  
+            transform: translateX(-50%);
+          }
+        
+    }
+}
+
+.about-101-labradoodle {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+    .link-img-container {
+        width: 70%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a  {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        img {
+            border-radius: 15px;
+        }
+    }
+
+    .img-container {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 30vw;
+       
+        img {
+            position: absolute;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+    
+    p {
+        color: $dark-green;
+        font-family: $font-stack;
+        font-size: 1rem;
+        max-width: 50%;
+        text-align: center;
+        margin: 60px auto;
+        line-height: 1.7rem;
+    }
+    
+    button {
+        background-color: $dark-red;
+        color: white;
+        width: 20rem;
+        border: none;
+        font-size: 1em;
+        border-radius: 2em;
+        padding: 15px 15px;
+    }
+
+    a {
+        margin: auto;
+    }
+}
