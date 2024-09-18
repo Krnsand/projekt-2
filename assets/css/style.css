@@ -1,0 +1,93 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #23333b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, opacity 5s ease;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.home-logo {
+  width: 10rem;
+  height: auto;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.navbar {
+  padding: 0%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #caad82;
+}
+
+.navbar-nav {
+  font-size: 1.2rem;
+}
+
+.btn-outline {
+  background-color: #b38a4c;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: #caad82;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border: white;
+}
+
+.main-page {
+  width: 100%;
+  height: 100vh;
+}
+
+/*-------Intresseanmälan------*/
+
+/* .puppy-image-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.puppy-form-img {
+  flex: 0 0 50%;
+}
+
+.puppy-form-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.puppy-text {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.puppy-text-overlay {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+} */
