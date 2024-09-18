@@ -37,4 +37,20 @@ footer p {
   font-size: 0.7em;
   margin: auto;
   padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contact-container .contact-details {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .contact-container .social-details {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=footer.css.map */
