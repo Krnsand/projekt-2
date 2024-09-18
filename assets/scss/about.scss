@@ -1,0 +1,55 @@
+$font-title: "Roboto", sans-serif;
+$font-body: "Poppins", sans-serif;
+$primary-color: #B38A4C;
+$secondary-color: #FFF7C8;
+$dark-green: #22333B;
+$dark-red: #53131E;
+$rose-ebony: #5A464C;
+$breakpoint-large-screen: 1200px;
+$breakpoint-tablet: 890px;
+$breakpoint-mobile: 600px;
+
+.about {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+
+    .index {
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(34,51,59,1));
+    }
+
+    .about-text {
+        width: 50%;
+        height: 100%;
+        padding: 40px;
+        background-color:#ebeaea;
+        border-radius: 20px;
+
+        h1 {
+            color: $dark-red;
+            font-family: $font-title;
+            margin: 20px auto 40px auto;
+        }
+
+        p {
+            font-family: $font-body;
+            font-size: 1em;
+            line-height: 1.5em;
+            padding-right: 60px;
+        }
+    }
+
+    .about-img {
+       width: 50%;
+
+       img {
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+       }
+    }
+}

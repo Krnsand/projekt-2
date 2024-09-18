@@ -26,6 +26,7 @@
     <!-- <link href="main.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/scss/intresse.css" type="text/css" />
+    <link rel="stylesheet" href="assets/scss/footer.css" type="text/css"
     <link rel="stylesheet" href="assets/gdpr.css" type="text/css"
   
     <title>101 Labradoodle</title>
@@ -73,14 +74,14 @@
                   Labradoodle
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Rasstandard</a></li>
-                    <li><a class="dropdown-item" href="#">Mål med avel</a></li>
+                    <li><a class="dropdown-item" href="rasstandard.html">Rasstandard</a></li>
+                    <li><a class="dropdown-item" href="mal-med-avel.html">Mål med avel</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown"></li>
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="intresseanmaelan.html"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -88,12 +89,12 @@
                   Intresseanmälan
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Bokning öppen</a></li>
+                    <li><a class="dropdown-item" href="bokning-open.html">Bokning öppen</a></li>
                     <li><a class="dropdown-item" href="#">Valpar</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Om 101 Labradoodle</a>
+                  <a class="nav-link" href="about.html">Om 101 Labradoodle</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="gdpr.html">GDPR</a>
@@ -252,7 +253,22 @@
          
     </main>
 
-    <footer>Typ kontaktuppgifter änna</footer>
+    <footer>
+      <h3>101 Labradoodles</h3>
+      <div class="contact-container">
+        <div class="contact-details">
+          <p>Email: sanna@101tassar.se</p>
+          <p>Adress: <a href="https://g.co/kgs/SejdAV7">Torvhögsvägen 49, 424 91 Olofstorp  <i class="fa-solid fa-location-dot"></i></a></p>
+          <p>Org.nr: 800225-0226 </p>
+        </div>
+        <div class="social-details">
+          <a href="https://www.facebook.com/Labradoodlepuppie/?locale=sv_SE" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/101labradoodles/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://101tassar.se/" target="_blank"><i class="fa-solid fa-paw"></i></a>
+        </div>
+      </div>
+      <p>© 2020 by 101 Labradoodles</p>
+    </footer>
     <script>
     document.querySelector('.nav-link.dropdown-toggle').addEventListener('click', function(e) {
         if (e.target.tagName === 'A' && e.target.getAttribute('href') === 'intresseanmalan.html') {
