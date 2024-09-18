@@ -1,1 +1,55 @@
-/*# sourceMappingURL=labradoodle-info.css.map */
+.page-title {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-title img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.page-title h1 {
+  color: #FFF7C8;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  position: absolute;
+  margin-bottom: 20rem;
+}
+
+.exterior {
+  width: 60%;
+  margin: 60px auto;
+}
+.exterior h2 {
+  color: #53131E;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+}
+.exterior h3 {
+  color: #B38A4C;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+.exterior h4 {
+  color: #5A464C;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.exterior p {
+  line-height: 1.7rem;
+}
+.exterior table {
+  width: 40%;
+}
+.exterior th {
+  height: 60px;
+}
+.exterior th, .exterior td {
+  padding: 15px 0;
+  text-align: left;
+}/*# sourceMappingURL=labradoodle-info.css.map */
+
