@@ -43,8 +43,8 @@ $rose-ebony: #5A464C;
     width: 60%;
     margin: auto;
 
-    .issue {
-        
+    .health-condition {
+
         h2 {
             color: $primary-color;
             font-family: $font-title;
@@ -53,12 +53,11 @@ $rose-ebony: #5A464C;
         }
 
         .expand-button {
-            background-color: $primary-color;
+            background-color: white;
             color: $dark-red;
             cursor: pointer;
             padding: 18px;
-            margin-left: 22px;
-            width: 60%;
+            width: 100%;
             border: none;
             text-align: left;
             outline: none;
@@ -67,10 +66,10 @@ $rose-ebony: #5A464C;
         }
 
         .description {
-            padding: 0;
+            padding: 0 20px;
             display: none;
             overflow: hidden;
-            background-color: $secondary-color;
+            background-color: #ebeaea;
         }
     }
 }

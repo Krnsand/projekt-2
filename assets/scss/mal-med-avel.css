@@ -32,28 +32,27 @@
   width: 60%;
   margin: auto;
 }
-.health-tests .issue h2 {
+.health-tests .health-condition h2 {
   color: #B38A4C;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   margin-top: 60px;
 }
-.health-tests .issue .expand-button {
-  background-color: #B38A4C;
+.health-tests .health-condition .expand-button {
+  background-color: white;
   color: #53131E;
   cursor: pointer;
   padding: 18px;
-  margin-left: 22px;
-  width: 60%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 1rem;
   font-weight: bold;
 }
-.health-tests .issue .description {
-  padding: 0;
+.health-tests .health-condition .description {
+  padding: 0 20px;
   display: none;
   overflow: hidden;
-  background-color: #FFF7C8;
+  background-color: #ebeaea;
 }/*# sourceMappingURL=mal-med-avel.css.map */
