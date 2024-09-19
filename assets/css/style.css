@@ -5,7 +5,7 @@ header {
   color: white;
   padding: 10px;
   text-align: center;
-  transition: background-color 0.3s ease, opacity 5s ease;
+  transition: background-color 0.3s ease, opacity 50% ease;
   opacity: 1;
   z-index: 1000;
 }
@@ -15,6 +15,12 @@ header {
   height: auto;
   margin-left: 2rem;
   margin-top: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .navbar {
@@ -31,6 +37,22 @@ header {
 
 .navbar-nav {
   font-size: 1.2rem;
+}
+
+.dropdown {
+  position: relative; /* Behåll relativ positionering för föräldern */
+}
+
+.dropdown-menu {
+  position: absolute; /* Absolut positionering för dropdown-menyn */
+  top: 100%; /* Placera den direkt under menyalternativet */
+  left: 0; /* Justera den horisontellt om det behövs */
+  z-index: 1000; /* Högre z-index för att dropdown inte ska hamna bakom andra element */
+  display: none; /* Standard döljs dropdown men aktiveras med JavaScript */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Visar dropdown-menyn när användaren hovrar över menyalternativet */
 }
 
 .btn-outline {
