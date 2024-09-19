@@ -10,7 +10,26 @@ header {
   z-index: 1000;
 }
 
+.navbar-brand {
+  display: inline-block; /* Make sure the brand logo behaves like a block */
+  text-align: center; /* Center the text and logo */
+}
+
 .home-logo {
+  display: block; /* Ensure the image takes up its own line */
+  margin: 0 auto; /* Optional: Center the logo image horizontally */
+  max-width: 100%; /* Optional: Make the logo responsive */
+  width: 10rem;
+}
+
+.logo-text {
+  display: block; /* Forces text to appear on its own line */
+  font-size: 1.2rem; /* Adjust the size of the text as needed */
+  margin-top: 5px; /* Optional: Add some spacing between logo and text */
+  color: white;
+}
+
+/* .home-logo {
   width: 10rem;
   height: auto;
   margin-left: 2rem;
@@ -21,7 +40,7 @@ header {
   display: flex;
   flex-direction: column;
   color: white;
-}
+} */
 
 .navbar {
   padding: 0%;
@@ -39,20 +58,47 @@ header {
   font-size: 1.2rem;
 }
 
-.dropdown {
-  position: relative; /* Behåll relativ positionering för föräldern */
+/* Föräldern (li) ska ha relativ positionering */
+.nav-item {
+  position: relative;
 }
 
+/* Dropdown-menyn är absolut positionerad och dold som standard */
 .dropdown-menu {
-  position: absolute; /* Absolut positionering för dropdown-menyn */
-  top: 100%; /* Placera den direkt under menyalternativet */
-  left: 0; /* Justera den horisontellt om det behövs */
-  z-index: 1000; /* Högre z-index för att dropdown inte ska hamna bakom andra element */
-  display: none; /* Standard döljs dropdown men aktiveras med JavaScript */
+  display: none;
+  position: absolute;
+  top: 100%; /* Placera direkt under menyalternativet */
+  left: 0;
+  z-index: 1000; /* Se till att dropdown visas över andra element */
+  min-width: 200px; /* Bredd på dropdown, justera efter behov */
+  background-color: white; /* Bakgrundsfärg för dropdown */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lätt skugga för dropdown */
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block; /* Visar dropdown-menyn när användaren hovrar över menyalternativet */
+/* Visa dropdown-menyn när man hovrar över dropdown-item */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Styla dropdown-item länkarna */
+.dropdown-item {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Ändra färg när man hovrar */
+  color: #0056b3; /* Färg på texten vid hover */
+}
+
+/* För att säkerställa att dropdowns stängs korrekt på mobiler */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static; /* På mindre skärmar visas dropdowns inline */
+  }
 }
 
 .btn-outline {
