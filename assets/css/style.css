@@ -19,7 +19,7 @@ header {
 
 .home-logo {
   display: block;
-  margin: 0 auto;
+  margin: 0 2rem;
   max-width: 100%;
   width: 10rem;
 }
@@ -28,7 +28,7 @@ header {
   display: block;
   font-size: 1.1rem;
   margin-top: 5px;
-  color: white;
+  color: #caad82;
   font-family: "Poppins", sans-serif;
 }
 
@@ -37,6 +37,10 @@ header {
 }
 
 .nav-link {
+  color: white;
+}
+
+.nav-link:visited {
   color: white;
 }
 
@@ -61,17 +65,15 @@ header {
   left: 0;
   z-index: 1000;
   min-width: 200px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Visa dropdown-menyn när man hovrar över dropdown-item */
 .nav-item:hover .dropdown-menu {
   display: block;
 }
 
-/* Styla dropdown-item länkarna */
 .dropdown-item {
   padding: 10px 20px;
   color: #333;
@@ -80,8 +82,8 @@ header {
 }
 
 .dropdown-item:hover {
-  background-color: #f8f9fa; /* Ändra färg när man hovrar */
-  color: #0056b3; /* Färg på texten vid hover */
+  background-color: #f2f2f2dc; /* Ändra färg när man hovrar */
+  color: #53131e; /* Färg på texten vid hover */
 }
 
 /* För att säkerställa att dropdowns stängs korrekt på mobiler */
@@ -109,8 +111,3 @@ header {
   background-color: white;
   border: white;
 }
-
-/* .main-page {
-  width: 100%;
-  height: 100vh;
-} */
