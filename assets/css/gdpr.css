@@ -13,6 +13,7 @@ main {
 	margin-top: 100px; /*Fråga om det är ok med px?*/
 	margin-left: auto;
 	margin-right: auto;
+  padding: 20px;
   /*text-align:*/
 	/*width: 640px;
 	margin-top: 100px;
@@ -20,13 +21,13 @@ main {
 	margin-right: auto;*/
 }
 
-.container-gdpr:nth-of-type(odd) {
-  background-color:#000;
+/* .container-gdpr:nth-of-type(odd) {
+  background-color:beige;
   }
   
   .container-gdpr:nth-of-type(even) {
-  background-color:#fff;
-  }
+  background-color:gray;
+  } */
 
 h1{
   color: #b38a4c;
@@ -40,6 +41,7 @@ h1{
 h2{
   color: #53131E;
   padding-bottom: 15px; /*För att få avstånd mellan texten och rubriken*/
+  font-size: 1.7rem;
 }
 
 a {
