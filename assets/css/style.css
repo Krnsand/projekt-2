@@ -70,6 +70,14 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    top: auto; /* Reset default positioning */
+    bottom: 100%; /* Move it above the toggle */
+    margin-bottom: 0; /* Reset margin if needed */
+  }
+}
+
 .nav-item:hover .dropdown-menu {
   display: block;
 }
@@ -107,7 +115,17 @@ header {
   background-color: #caad82;
 }
 
+@media (max-width: 991px) {
+  .btn-outline {
+    margin-bottom: 1rem;
+  }
+}
+
 .navbar-toggler-icon {
-  background-color: white;
-  border: white;
+  background-color: #caad82;
+  border: none;
+}
+
+.navbar-toggler-icon:visited {
+  border-color: none;
 }
