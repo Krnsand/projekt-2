@@ -138,3 +138,106 @@ form input[type="submit"]:hover {
     max-width: 100%; /* För mobila enheter, använd hela skärmbredden */
   }
 }
+
+/*------------Slideshow------*/
+/* Container som tar upp 100% bredd och en fast höjd */
+.slideshow-container {
+  width: 100vw; /* Tar upp hela viewportens bredd */
+  height: 50vh; /* Bestäm en höjd (kan justeras) */
+  overflow: hidden; /* Skrolla bort allt som går utanför */
+  position: relative;
+}
+
+/* Slideshow som innehåller alla bilder */
+.slideshow {
+  display: flex;
+  width: 800%; /* 8 bilder = 100% * 8 */
+  height: 100%;
+  animation: slide 16s linear infinite; /* Gör animationen kontinuerlig */
+}
+
+/* Individuella bilder */
+.slideshow img {
+  width: 100vw; /* Varje bild tar upp hela bredden av viewporten */
+  height: 100%;
+  object-fit: cover; /* Håll proportioner men täck hela ytan */
+}
+
+/* Keyframes för stegvis skroll-animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400%);
+  } /* Skrolla genom 4 bilder (400%) */
+}
+
+/*--------bokning.css-------*/
+
+@charset "UTF-8";
+.bokning-open-text {
+  width: 50%;
+  margin: 10rem auto 5rem;
+  text-align: center;
+}
+.bokning-open-text h1 {
+  color: #b38a4c;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 40px auto;
+}
+.bokning-open-text p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.bokning-open-text .sub-text {
+  font-size: 0.9rem;
+}
+
+.btn-bokning {
+  background-color: #53131e;
+  color: white;
+  border-radius: 2em;
+}
+
+.btn-bokning:hover {
+  background-color: #79434c;
+  color: white;
+}
+
+/* Container som tar upp 100% bredd och en fast höjd */
+.slideshow-container {
+  width: 100vw; /* Tar upp hela viewportens bredd */
+  height: 50vh; /* Bestäm en höjd (kan justeras) */
+  overflow: hidden; /* Skrolla bort allt som går utanför */
+  position: relative;
+}
+
+/* Slideshow som innehåller alla bilder */
+.slideshow {
+  display: flex;
+  width: 800%; /* 8 bilder = 100% * 8 */
+  height: 100%;
+  animation: slide 16s linear infinite; /* Gör animationen kontinuerlig */
+}
+
+/* Individuella bilder */
+.slideshow img {
+  width: 100vw; /* Varje bild tar upp hela bredden av viewporten */
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; /* Håll proportioner men täck hela ytan */
+}
+
+/* Keyframes för stegvis skroll-animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400%);
+  } /* Skrolla genom 4 bilder (400%) */
+} /*# sourceMappingURL=bokning.css.map */
