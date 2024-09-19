@@ -1,0 +1,95 @@
+.bokning-open-text {
+  width: 50%;
+  margin: 10rem auto 5rem;
+  text-align: center;
+}
+.bokning-open-text h1 {
+  color: #b38a4c;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 40px auto;
+}
+.bokning-open-text p {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.bokning-open-text .sub-text {
+  font-size: 0.9rem;
+}
+.btn-bokning {
+  background-color: #53131e;
+  color: white;
+  border-radius: 2em;
+}
+.btn-bokning:hover {
+  background-color: #79434c;
+  color: white;
+}
+/* Container som tar upp 100% bredd och en fast höjd */
+.slideshow-container {
+  width: 100vw;
+  /* Tar upp hela viewportens bredd */
+  height: 50vh;
+  /* Bestäm en höjd (kan justeras) */
+  overflow: hidden;
+  /* Skrolla bort allt som går utanför */
+  position: relative;
+}
+/* Slideshow som innehåller alla bilder */
+.slideshow {
+  display: flex;
+  width: 800%;
+  /* 8 bilder = 100% * 8 (för 8 bilder, justera om det är färre eller fler) */
+  height: 100%;
+  animation: slide 40s ease-in-out infinite;
+  /* Total animationstid: 8 bilder * 5 sekunder per bild = 40s */
+}
+/* Individuella bilder */
+.slideshow img {
+  width: 100vw;
+  /* Varje bild tar upp hela bredden av viewporten */
+  height: 100%;
+  object-fit: cover;
+  /* Håll proportioner men täck hela ytan */
+}
+/* Animation för att skapa långsam övergång och stanna vid varje bild */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+    /* Första bilden */
+  }
+  12.5% {
+    transform: translateX(0);
+    /* Första bilden stannar i 5 sekunder */
+  }
+  25% {
+    transform: translateX(-100vw);
+    /* Andra bilden */
+  }
+  37.5% {
+    transform: translateX(-100vw);
+    /* Andra bilden stannar */
+  }
+  50% {
+    transform: translateX(-200vw);
+    /* Tredje bilden */
+  }
+  62.5% {
+    transform: translateX(-200vw);
+    /* Tredje bilden stannar */
+  }
+  75% {
+    transform: translateX(-300vw);
+    /* Fjärde bilden */
+  }
+  87.5% {
+    transform: translateX(-300vw);
+    /* Fjärde bilden stannar */
+  }
+  100% {
+    transform: translateX(0);
+    /* Återgå till första bilden */
+  }
+}
