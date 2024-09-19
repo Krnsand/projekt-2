@@ -1,26 +1,40 @@
 header {
   position: sticky;
   top: 0;
-  background-color: #23333b;
+  background-color: rgba(35, 51, 59, 1); /* Fully opaque by default */
   color: white;
-  padding: 10px;
   text-align: center;
-  transition: background-color 0.3s ease, opacity 5s ease;
-  opacity: 1;
+  transition: background-color 0.3s ease;
   z-index: 1000;
 }
 
+.scrolled {
+  background-color: rgba(35, 51, 59, 0.8); /* 80% opacity when scrolled */
+}
+
+.navbar-brand {
+  display: inline-block;
+  text-align: center;
+}
+
 .home-logo {
+  display: block;
+  margin: 0 2rem;
+  max-width: 100%;
   width: 10rem;
-  height: auto;
-  margin-left: 2rem;
-  margin-top: 1rem;
+}
+
+.logo-text {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #caad82;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
 }
 
 .navbar {
@@ -28,6 +42,10 @@ header {
 }
 
 .nav-link {
+  color: white;
+}
+
+.nav-link:visited {
   color: white;
 }
 
@@ -39,25 +57,82 @@ header {
   font-size: 1.2rem;
 }
 
+.nav-item {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    top: auto; /* Reset default positioning */
+    bottom: 100%; /* Move it above the toggle */
+    margin-bottom: 0; /* Reset margin if needed */
+  }
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2dc; /* Ändra färg när man hovrar */
+  color: #53131e; /* Färg på texten vid hover */
+}
+
+/* För att säkerställa att dropdowns stängs korrekt på mobiler */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static; /* På mindre skärmar visas dropdowns inline */
+  }
+}
+
 .btn-outline {
   background-color: #b38a4c;
   margin-left: 1rem;
   margin-right: 2rem;
   color: white;
+  border-radius: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn-outline:hover {
   background-color: #caad82;
 }
 
-.navbar-toggler-icon {
-  background-color: white;
-  border: white;
+@media (max-width: 991px) {
+  .btn-outline {
+    margin-bottom: 1rem;
+  }
 }
 
-.main-page {
-  width: 100%;
-  height: 100vh;
+.navbar-toggler-icon {
+  background-color: #caad82;
+  border: none;
+}
+
+.navbar-toggler-icon:visited {
+  border-color: none;
 }
 
 /*-------Intresseanmälan------*/

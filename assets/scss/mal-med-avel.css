@@ -1,27 +1,36 @@
+.index {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(34, 51, 59));
+}
+
 .page-title {
-  width: 100%;
-  height: auto;
+  position: relative;
+  margin: 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  width: 100%;
+  height: 35vw;
 }
 .page-title img {
-  width: 100%;
+  position: absolute;
   height: auto;
-  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .breeding-intro {
   width: 60%;
-  margin: auto;
+  margin: 60px auto 0 auto;
+  background-color: #ebeaea;
+  padding: 20px;
+  border-radius: 20px;
 }
 .breeding-intro h1 {
-  color: #53131E;
+  color: #B38A4C;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .breeding-intro p {
   font-family: "Poppins", sans-serif;
@@ -30,21 +39,25 @@
 
 .health-tests {
   width: 60%;
-  margin: auto;
+  margin: 60px auto 0 auto;
+  background-color: #ebeaea;
+  padding: 20px;
+  border-radius: 20px;
 }
 .health-tests .health-condition h2 {
-  color: #B38A4C;
+  color: #53131E;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .health-tests .health-condition .expand-button {
-  background-color: white;
-  color: #53131E;
+  background-color: #ebeaea;
+  color: #5A464C;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
+  border-radius: 20px 20px 0 0;
   text-align: left;
   outline: none;
   font-size: 1rem;
@@ -55,4 +68,16 @@
   display: none;
   overflow: hidden;
   background-color: #ebeaea;
+  border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 890px) {
+  .page-title {
+    height: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  .page-title {
+    height: 500px;
+  }
 }/*# sourceMappingURL=mal-med-avel.css.map */
