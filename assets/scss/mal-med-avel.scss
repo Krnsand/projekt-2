@@ -5,20 +5,25 @@ $secondary-color: #FFF7C8;
 $dark-green: #22333B;
 $dark-red: #53131E;
 $rose-ebony: #5A464C;
+$breakpoint-large-screen: 1200px;
+$breakpoint-tablet: 890px;
+$breakpoint-mobile: 600px;
 
 .page-title {
-    width: 100%;
-    height: auto;
+    position: relative;
+    margin: 0;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    width: 100%;
+    height: 35vw;
 
     img {
-        width: 100%;
+        position: absolute;
         height: auto;
-        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+        min-width: 100%;
     }
 }
 
@@ -50,6 +55,7 @@ $rose-ebony: #5A464C;
             font-family: $font-title;
             font-size: 2rem;
             margin-top: 60px;
+            margin-bottom: 20px;
         }
 
         .expand-button {
@@ -71,5 +77,18 @@ $rose-ebony: #5A464C;
             overflow: hidden;
             background-color: #ebeaea;
         }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .page-title {
+        height: 50vw;
+    }
+}   
+
+@media (max-width: $breakpoint-mobile) {
+    
+    .page-title {
+        height: 500px;
     }
 }
