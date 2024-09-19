@@ -3,42 +3,26 @@ margin: 0;
 padding: 0;
 } Fråga om detta behövs?*/
 
-main {
-/*background-color:*/
-}
-
 .container-gdpr{              /*För section*/
 	background-color: white;
-  width: 1000px;
+  width: 1200px;
 	margin-top: 100px; /*Fråga om det är ok med px?*/
 	margin-left: auto;
 	margin-right: auto;
-  padding: 20px;
-  /*text-align:*/
-	/*width: 640px;
-	margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;*/
+  padding: 60px;
+  border-radius: 20px; /*Rundar kanterna*/
 }
 
-/* .container-gdpr:nth-of-type(odd) {
-  background-color:beige;
-  }
-  
-  .container-gdpr:nth-of-type(even) {
-  background-color:gray;
-  } */
-
-h1{
+h1 {
   color: #b38a4c;
   font-family: "Roboto", sans-serif;
-  font-size: 2.5rem; /*2,5x16px (default value in most browsers)=ca40px. Using rem can help ensure consistency of font size and spacing throughout your UI.*/
- /*font-weight: 600; specify the boldness or thickness of the text*/
+  font-size: 2.0rem; /*2,5x16px (default value in most browsers)=ca40px. Using rem can help ensure consistency of font size and spacing throughout your UI.*/
+  /*font-weight: 600; specify the boldness or thickness of the text*/
   margin: 60px 0px 8px;
   text-align: center;
 }
 
-h2{
+h2 {
   color: #53131E;
   padding-bottom: 15px; /*För att få avstånd mellan texten och rubriken*/
   font-size: 1.7rem;
@@ -48,10 +32,18 @@ a {
   color: #53131E;
 }
 
-.container-gdpr-item { /*div:arna*/
+.container-gdpr-item { /*=div:arna, dock bytt namn på vissa, kan tas bort*/
   
 }
 
+.description {
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+}
 p {
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
@@ -59,18 +51,15 @@ p {
   }
 
 .list-gdpr {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-    
+        margin-bottom: 0;
       }
 
-      /*Responsivitet, 2 breakpoints, hur gör man detta? 
-      Nu har varje flik i hemsidan en egen css-fil. Hur kan man använda samma fil, så att man får samma utseende utan att dubbelarbeta?
-      Tankar om min sida: Mycket text, man blir trött innan man ens börjat läsa. Tror en layout med "meny" eller transitions av något slag som delvis döljer delar av texten
-      och även tydliggör vilken typ av information som finns så att användaren inte behöver läsa massa onödig text. Ex är man inte jobbsökande
-      så behöver man ju inte ta del av detta. Layouten bör även utnyttja utrymmen, just nu mycket dött utrymme. 
 
+      /*Responsivitet, 2 breakpoints, hur gör man detta? 
+      
