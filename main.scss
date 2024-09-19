@@ -15,16 +15,19 @@ $breakpoint-mobile: 600px;
 }
 
 .current-puppies {
-    width: 70%;
-    margin: auto;
+    width: 60%;
+    margin: 60px auto 0px auto;
+    padding: 40px;
     text-align: center;
+    background-color: white;
+    border-radius: 20px;
 
     h1 {
         color: $primary-color;
         font-family: $font-title;
         font-size: 2.5rem;
         font-weight: 600;
-        margin: 40px auto;
+        margin: auto;
     }
 
     p {
@@ -43,7 +46,7 @@ $breakpoint-mobile: 600px;
 .image-container {
     display: flex;
     justify-content: center;
-    margin: 60px auto;
+    margin: 40px auto;
     gap: 40px;
 
     .img-and-label {
@@ -60,8 +63,8 @@ $breakpoint-mobile: 600px;
         }
 
         span {
-            background-color: $secondary-color;
-            color:#53131E;
+            background-color: #ebeaea;
+            color: $dark-red;
             padding: 20px;
             border-radius: 20px;
             position: absolute;
@@ -133,10 +136,13 @@ $breakpoint-mobile: 600px;
 }
 
 .card-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin: 80px auto;
+    margin: 40px auto 80px auto;
 }
 
 .card {
@@ -157,7 +163,7 @@ $breakpoint-mobile: 600px;
             color: $primary-color;
             font-family: $font-title;
             font-size: 1.8rem;
-            font-weight: 300;
+            font-weight: 400;
             margin: 40px;
             text-wrap: none;
         }
@@ -194,7 +200,7 @@ $breakpoint-mobile: 600px;
 
     .img-container {
         position: relative;
-        margin: 0;
+        margin: auto;
         overflow: hidden;
         width: 100%;
         height: 30vw;
@@ -257,10 +263,39 @@ $breakpoint-mobile: 600px;
             margin: auto;
         }
     }
+    .wala-cert {
+    
+        div { 
+            img {
+                width: 40%;
+            }
+            p {
+                color: #ebeaea;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin: 60px auto;
+            }
+
+            a {
+                color: #ebeaea;
+            }
+        }
+    }
 }
 @media (max-width: $breakpoint-tablet) {
+    .current-puppies {
+        width: 80%;
+    }
+
     .image-container {
         flex-wrap: wrap;
+
+        .img-and-label {
+    
+            span {
+                width:25%;
+            }
+        }
     }
 
     .interest-and-plans {
@@ -291,10 +326,14 @@ $breakpoint-mobile: 600px;
             }
     
             p {
-                color: $dark-red;
+                color: #ebeaea;
                 font-size: 1.1rem;
                 font-weight: 600;
                 margin: 60px auto;
+            }
+
+            a {
+                color: #ebeaea;
             }
         }
     }
@@ -315,6 +354,27 @@ $breakpoint-mobile: 600px;
     }
 }
 @media (max-width: $breakpoint-mobile) { 
+    .current-puppies {
+        width: 90%;
+    }
+
+    .image-container {
+
+        .img-and-label {
+    
+            span {
+                width:40%;
+            }
+        }
+    }
+
+    .about-labradoodle {
+        button {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
     .wala-cert {
     
         div { 
@@ -322,10 +382,14 @@ $breakpoint-mobile: 600px;
                 width: 40%;
             }
             p {
-                color: $dark-red;
+                color: #ebeaea;
                 font-size: 0.9rem;
                 font-weight: 600;
                 margin: 60px auto;
+            }
+
+            a {
+                color: #ebeaea;
             }
         }
     }

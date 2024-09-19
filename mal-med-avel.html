@@ -21,7 +21,7 @@
      <link href="assets/scss/mal-med-avel.css" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
      <link href="assets/scss/footer.css" rel="stylesheet" type="text/css" />
-     <title>101 Labradoodle</title>
+     <title>Mål med avel | 101 Labradoodle</title>
   </head>
   <body>
     <header>
@@ -90,7 +90,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="index">
         <div class="page-title">
           <img src="assets/images/labradoodle-pup.png" alt="Beige labradadoodle valp ligger i gräset">
         </div>
@@ -186,7 +186,7 @@
               // If there is an active button and it's not the current one
               if (currentActiveButton && currentActiveButton !== this) {
                   // Reset previous button and description
-                  currentActiveButton.style.backgroundColor = "white";
+                  currentActiveButton.style.backgroundColor = "#ebeaea";
                   currentActiveDescription.style.display = "none";
                    // Reset the icon of the previous button
                   var prevIcon = currentActiveButton.querySelector("i");
@@ -199,7 +199,7 @@
               if (this === currentActiveButton) {
                   // If clicking the same button, toggle the description and background color
                   content.style.display = content.style.display === "block" ? "none" : "block";
-                  this.style.backgroundColor = content.style.display === "block" ? "#ebeaea" : "white";
+                  this.style.backgroundColor = content.style.display === "block" ? "#ebeaea" : "#ebeaea";
                    // Toggle the icon
                   if (content.style.display === "block") {
                       icon.classList.remove("fa-chevron-down");
