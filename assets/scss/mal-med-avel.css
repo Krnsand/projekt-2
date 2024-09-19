@@ -1,16 +1,18 @@
 .page-title {
-  width: 100%;
-  height: auto;
+  position: relative;
+  margin: 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  width: 100%;
+  height: 35vw;
 }
 .page-title img {
-  width: 100%;
+  position: absolute;
   height: auto;
-  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .breeding-intro {
@@ -37,6 +39,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 .health-tests .health-condition .expand-button {
   background-color: white;
@@ -55,4 +58,15 @@
   display: none;
   overflow: hidden;
   background-color: #ebeaea;
+}
+
+@media (max-width: 890px) {
+  .page-title {
+    height: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  .page-title {
+    height: 500px;
+  }
 }/*# sourceMappingURL=mal-med-avel.css.map */
