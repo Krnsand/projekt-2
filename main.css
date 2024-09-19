@@ -1,19 +1,28 @@
+.index {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(34, 51, 59));
+}
+
 .current-puppies {
-  width: 70%;
-  margin: auto;
+  width: 60%;
+  margin: 60px auto 0px auto;
+  padding: 40px;
   text-align: center;
+  background-color: white;
+  border-radius: 20px;
 }
 .current-puppies h1 {
   color: #B38A4C;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
-  margin: 40px auto;
+  margin: auto;
 }
 .current-puppies p {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  max-width: 70%;
+  margin: 40px auto;
 }
 .current-puppies .sub-text {
   font-size: 0.9rem;
@@ -22,7 +31,7 @@
 .image-container {
   display: flex;
   justify-content: center;
-  margin: 60px auto;
+  margin: 40px auto;
   gap: 40px;
 }
 .image-container .img-and-label {
@@ -32,17 +41,18 @@
   align-items: center;
 }
 .image-container .img-and-label img {
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
+  width: 100%;
+  height: auto;
 }
 .image-container .img-and-label span {
-  background-color: #FFF7C8;
+  background-color: #ebeaea;
   color: #53131E;
   padding: 20px;
-  border-radius: 15px;
-  z-index: 2;
+  border-radius: 20px;
   position: absolute;
-  width: 480px;
+  width: 20%;
   opacity: 0.8;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -53,25 +63,27 @@
 
 .wala-cert {
   margin: auto;
-  width: 70%;
+  width: 100%;
 }
 .wala-cert div {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  margin: auto;
   gap: 10%;
 }
 .wala-cert div img {
   margin: 60px;
 }
 .wala-cert div p {
-  color: #B38A4C;
+  color: #53131E;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   max-width: 30rem;
 }
 .wala-cert div a {
-  color: #B38A4C;
+  color: #53131E;
 }
 
 .quote-box {
@@ -80,7 +92,6 @@
   align-items: center;
   width: 100vw;
   height: 400px;
-  background-color: #ebeaea;
 }
 .quote-box .quote {
   width: 70%;
@@ -100,10 +111,13 @@
 }
 
 .card-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin: 80px;
+  margin: 40px auto 80px auto;
 }
 
 .card {
@@ -117,14 +131,15 @@
   background-color: #ebeaea;
   text-align: center;
   border-radius: 0px 0px 15px 15px;
-  height: 20rem;
+  min-height: 20rem;
 }
 .card .card-body h2 {
   color: #B38A4C;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.8rem;
+  font-weight: 400;
   margin: 40px;
+  text-wrap: none;
 }
 .card .card-body p {
   color: #22333B;
@@ -148,35 +163,19 @@
   transform: translateX(-50%);
 }
 
-.about-101-labradoodle {
+.about-labradoodle {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.about-101-labradoodle .link-img-container {
-  width: 70%;
-  margin: 80px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-101-labradoodle .link-img-container a {
-  color: #B38A4C;
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.about-101-labradoodle .link-img-container img {
-  border-radius: 15px;
-}
-.about-101-labradoodle .img-container {
+.about-labradoodle .img-container {
   position: relative;
-  margin: 0;
+  margin: auto;
   overflow: hidden;
   width: 100%;
   height: 30vw;
 }
-.about-101-labradoodle .img-container img {
+.about-labradoodle .img-container img {
   position: absolute;
   height: auto;
   top: 50%;
@@ -185,24 +184,127 @@
   min-height: 100%;
   min-width: 100%;
 }
-.about-101-labradoodle p {
-  color: #22333B;
+.about-labradoodle h3 {
+  color: #B38A4C;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  max-width: 50%;
+  text-align: center;
+  margin: 60px auto;
+}
+.about-labradoodle p {
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   max-width: 50%;
   text-align: center;
-  margin: 60px auto;
+  margin: 0 auto 60px auto;
   line-height: 1.7rem;
 }
-.about-101-labradoodle button {
-  background-color: #53131E;
+.about-labradoodle button {
+  background-color: #B38A4C;
   color: white;
   width: 20rem;
   border: none;
   font-size: 1em;
+  font-weight: 600;
   border-radius: 2em;
   padding: 15px 15px;
 }
-.about-101-labradoodle a {
-  margin: auto;
+.about-labradoodle a {
+  margin: 0 auto 60px auto;
+}
+
+@media (max-width: 1200px) {
+  .interest-and-plans {
+    width: 90%;
+    margin: auto;
+  }
+  .card-body h2 {
+    margin: auto;
+  }
+  .wala-cert div img {
+    width: 40%;
+  }
+  .wala-cert div p {
+    color: #ebeaea;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 60px auto;
+  }
+  .wala-cert div a {
+    color: #ebeaea;
+  }
+}
+@media (max-width: 890px) {
+  .current-puppies {
+    width: 80%;
+  }
+  .image-container {
+    flex-wrap: wrap;
+  }
+  .image-container .img-and-label span {
+    width: 25%;
+  }
+  .interest-and-plans {
+    width: 100%;
+    margin: auto;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .card {
+    width: 80%;
+  }
+  .card-body h2 {
+    margin: auto;
+  }
+  .wala-cert div img {
+    margin: 60px 0px;
+  }
+  .wala-cert div p {
+    color: #ebeaea;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 60px auto;
+  }
+  .wala-cert div a {
+    color: #ebeaea;
+  }
+  .about-labradoodle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-labradoodle .img-container {
+    height: 70vw;
+  }
+  .about-labradoodle p {
+    max-width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .current-puppies {
+    width: 90%;
+  }
+  .image-container .img-and-label span {
+    width: 40%;
+  }
+  .about-labradoodle button {
+    width: 90%;
+    margin: auto;
+  }
+  .wala-cert div img {
+    width: 40%;
+  }
+  .wala-cert div p {
+    color: #ebeaea;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 60px auto;
+  }
+  .wala-cert div a {
+    color: #ebeaea;
+  }
 }/*# sourceMappingURL=main.css.map */

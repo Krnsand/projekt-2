@@ -1,0 +1,68 @@
+$font-stack: "Roboto", sans-serif;
+$primary-color: #b38a4c;
+$secondary-color: #fff7c8;
+$dark-green: #22333b;
+$dark-red: #53131e;
+$rose-ebony: #5a464c;
+
+.bokning-open-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+    font-family: $font-stack;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 40px auto;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-family: $font-stack;
+    font-weight: 300;
+  }
+
+  .sub-text {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-bokning {
+  background-color: $dark-red;
+  color: $secondary-color;
+}
+
+/* Container som tar upp 100% bredd och en fast höjd */
+.slideshow-container {
+  width: 100vw; /* Tar upp hela viewportens bredd */
+  height: 50vh; /* Bestäm en höjd (kan justeras) */
+  overflow: hidden; /* Skrolla bort allt som går utanför */
+  position: relative;
+}
+
+/* Slideshow som innehåller alla bilder */
+.slideshow {
+  display: flex;
+  width: 800%; /* 8 bilder = 100% * 8 */
+  height: 100%;
+  animation: slide 16s linear infinite; /* Gör animationen kontinuerlig */
+}
+
+/* Individuella bilder */
+.slideshow img {
+  width: 100vw; /* Varje bild tar upp hela bredden av viewporten */
+  height: 100%;
+  object-fit: cover; /* Håll proportioner men täck hela ytan */
+}
+
+/* Keyframes för stegvis skroll-animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400%);
+  } /* Skrolla genom 4 bilder (400%) */
+}
