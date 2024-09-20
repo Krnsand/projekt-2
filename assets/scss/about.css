@@ -25,6 +25,7 @@ h1 {
   padding: 40px;
   background-color: #ebeaea;
   border-radius: 20px;
+  text-align: center;
 }
 .about .about-text p {
   font-family: "Poppins", sans-serif;
@@ -49,6 +50,9 @@ h1 {
   }
 }
 @media (max-width: 890px) {
+  .about {
+    width: 80%;
+  }
   .about .about-text {
     width: 590px;
     padding: 20px;
