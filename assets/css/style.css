@@ -32,11 +32,6 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-/* .logo-text {
-  display: flex;
-  flex-direction: column;
-} */
-
 .navbar {
   padding: 0%;
 }
@@ -140,9 +135,13 @@ header {
   }
 }
 
+.navbar-toggler{
+  border: solid 2px #caad82;
+}
+
 .navbar-toggler-icon {
   background-color: #caad82;
-  border: none;
+  /* border: none; */
 }
 
 .navbar-toggler-icon:visited {
