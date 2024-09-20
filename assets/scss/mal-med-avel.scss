@@ -95,11 +95,34 @@ $breakpoint-mobile: 600px;
     .page-title {
         height: 50vw;
     }
+
+    .breeding-intro {
+        width: 80%;
+    }
+
+    .health-tests {
+        width: 80%;
+    }
 }   
 
 @media (max-width: $breakpoint-mobile) {
     
     .page-title {
-        height: 500px;
+        width: 100vw;
+    
+        img {
+            position: relative;
+            top: 25%;
+            left: 75%;
+            // transform: translate(100, 100);
+            min-width: 100vw;
+        }
+    }
+    .breeding-intro {
+        width: 90%;
+    }
+
+    .health-tests {
+        width: 90%;
     }
 }

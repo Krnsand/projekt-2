@@ -17,7 +17,7 @@
   margin: auto;
 }
 .current-puppies p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   max-width: 70%;
@@ -135,7 +135,7 @@
 .card .card-body h2 {
   color: #B38A4C;
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin: 40px;
   text-wrap: none;
@@ -244,6 +244,7 @@
 @media (max-width: 890px) {
   .current-puppies {
     width: 80%;
+    padding: 20px;
   }
   .image-container {
     flex-wrap: wrap;
@@ -252,15 +253,16 @@
     width: 25%;
   }
   .interest-and-plans {
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
   .card-container {
     flex-wrap: wrap;
     margin: auto;
+    padding: 20px 0px;
   }
   .card {
-    width: 80%;
+    width: 90%;
   }
   .card-body h2 {
     margin: auto;
@@ -293,8 +295,14 @@
   .current-puppies {
     width: 90%;
   }
+  .current-puppies p {
+    font-size: 0.9rem;
+  }
   .image-container .img-and-label span {
     width: 40%;
+  }
+  .about-labradoodle p {
+    font-size: 0.8rem;
   }
   .about-labradoodle button {
     width: 90%;
@@ -311,5 +319,21 @@
   }
   .wala-cert div a {
     color: #ebeaea;
+  }
+  .card {
+    width: 90%;
+  }
+  .card .card-body {
+    height: 15rem;
+  }
+  .card .card-body h2 {
+    font-size: 1.5rem;
+  }
+  .card .card-body p {
+    font-size: 0.9rem;
+  }
+  .card .card-body a[role=button] {
+    bottom: 20px;
+    font-size: 0.8em;
   }
 }/*# sourceMappingURL=main.css.map */

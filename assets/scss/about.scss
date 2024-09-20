@@ -36,6 +36,7 @@ h1 {
         padding: 40px;
         background-color:#ebeaea;
         border-radius: 20px;
+        text-align: center;
 
         p {
             font-family: $font-body;
@@ -67,6 +68,8 @@ h1 {
 @media (max-width: $breakpoint-tablet) {
     
     .about {
+        width: 80%;
+
         .about-text {
             width: 590px;
             padding: 20px;
