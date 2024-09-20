@@ -48,8 +48,6 @@
 }
 /* Individuella bilder */
 .slideshow img {
-  width: 100vw;
-  /* Varje bild tar upp hela bredden av viewporten */
   height: 100%;
   object-fit: cover;
   /* Håll proportioner men täck hela ytan */
