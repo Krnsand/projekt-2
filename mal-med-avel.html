@@ -3,36 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome import -->
+    <script
+      src="https://kit.fontawesome.com/7a67359ae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap import -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-     <!-- Bootstrap import -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-     <!-- Font Awesome -->
-     <script src="https://kit.fontawesome.com/7a67359ae7.js" crossorigin="anonymous"></script>
-     <!-- CSS styles -->
-     <link href="assets/scss/mal-med-avel.css" rel="stylesheet" type="text/css">
-     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-     <link href="assets/scss/footer.css" rel="stylesheet" type="text/css" />
-     <title>Mål med avel | 101 Labradoodle</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <!-- CSS styles -->
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/scss/mal-med-avel.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/scss/footer.css" rel="stylesheet" type="text/css" />
+    <title>Mål med Avel | 101 Labradoodle</title>
   </head>
   <body>
-    <header>
+    <header id="myHeader">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand logo-title" href="index.html">
             <img
               src="assets/images/logo.png"
               alt="101Labradoodles logga"
               class="home-logo"
-          /></a>
+            />
+            <span class="logo-text">101 Labradoodles</span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,24 +59,38 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
             <ul class="navbar-nav">
-              <li class="nav-item dropdown"></li>
+              <!-- Dropdown for Labradoodle -->
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="index.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                Labradoodle
+                  Labradoodle
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="rasstandard.html">Rasstandard</a></li>
-                  <li><a class="dropdown-item" href="mal-med-avel.html">Mål med avel</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rasstandard.html">
+                      Rasstandard
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mal-med-avel.html"
+                      >Mål med avel</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown"></li>
+
+              <!-- Dropdown for Intresseanmälan -->
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="intresseanmaelan.html"
@@ -69,21 +98,29 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                Intresseanmälan
+                  Intresseanmälan
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="bokning-open.html">Bokning öppen</a></li>
+                  <li>
+                    <a class="dropdown-item" href="bokning-open.html"
+                      >Bokning öppen</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">Valpar</a></li>
                 </ul>
               </li>
+
+              <!-- Other menu items -->
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Om 101 Labradoodle</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gdpr.html">GDPR</a>
               </li>
-              <li>
-                <button class="btn btn-outline" type="submit">Bokning öppen</button>
+              <li class="nav-item">
+                <button class="btn btn-outline" type="submit">
+                  Bokning öppen
+                </button>
               </li>
             </ul>
           </div>
@@ -91,89 +128,315 @@
       </nav>
     </header>
     <main class="index">
-        <div class="page-title">
-          <img src="assets/images/labradoodle-pup.png" alt="Beige labradadoodle valp ligger i gräset">
-        </div>
-        <section class="breeding-intro">
-          <h1>Mål med avel</h1>
-          <p><strong>Viktigast av allt för oss är friska och mentalt sunda Labradoodle.</strong></p>
-          <p>Vi hälsotestar alla våra Labradoodle för att förhindra sjukdomar. Att köpa en valp efter inte testade föräldrar kan få ödestigande konsekvenser. Vi ser fram emot att aveln får fortsätta så här seriöst samt att labradoodle utvecklas med den internationella riktlinje vilket är viktig.  Här är länk till  rasstandarden för Australiensisk Labradoodle</p>
-          <p>En del av grundkomponenterna hos oss är röntgen av höfter och armbågar, undersökning av patella och ögonlysning som görs varje år. Sedan skickas analyser i väg på en mängd olika sjukdomar vilka du kan läsa mer om nedanför. Genom att ha känd status på våra hundar så minskar vi risken att valparna får dessa deffekter.</p>
-          <p>Våra labradoodle är dessutom vackra exteriört och vi är noga med att välja ut vilken linje vi avlar vidare på. Det finns alltför många raser där man har valt att följa överdrivna exteriöra drag som har lett till sjuka hundar tyvärr. Det vill vi inte vara med om utan vi vill behålla friska labradoodlar med deras kända fantastiska temperament vilket kan vara lite av ett detektivarbete och tar en del tid.</p>
-          <p>Vi ser fram emot att aveln får fortsätta så här seriöst och ser inga fördelar med att skynda utan tar god tid på oss att hitta bra linjer som passar med varandra.  </p>
-        </section>
-        <section class="health-tests">
-          <article class="health-condition">
-            <h2>Viktiga hälsotester vi utför på våra avelshundar</h2>
-            <button type="button" class="expand-button"> Degenerativ Myelopati <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>DM, som är en sjukdom där hundens egna immunförsvar attackera nervsystemet. Denna sjukdom märks inte förrän hunden kommer upp i en ålder av 5 år. Det är viktig att man testar för att inga med denna sjukdom ska gå i avel. Detta är också en recessiv gen. Det krävs alltså att valpen får genen från båda föräldrarna för att bli sjuk. För att vara på den säkra sidan så testar man båda föräldrarna. Detta testas med DNA-test.</p>
-              </div>
-              <button type="button" class="expand-button"> Improper Coat <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Om man vill veta att man får en hund som inte fäller päls(lik labradoren)  så ska man också se till att uppfödaren testat sina hundar för Improper Coat, som är en recessiv gen. Som om valpen får en sådan gen av varje förälder så får den päls som liknar med Labradoren. Om valpen har en som inte bär på genen så kan valpen inte får denna päls, utan får den lockiga Labradoodlepälsen. Då många väljer Labradoodle för att få en hund som har den lockiga pälsen som inte fäller, så är detta viktigt att kolla också.</p>
-              </div>
-              <button type="button" class="expand-button"> EIC  Exercise Induced Collapse <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>EIC är en neurologisk sjukdom där överföringen av impulser mellan nerver och muskulatur inte fungerar som den ska. Denna sjukdom har hittats hos Labradoren och en sjuk hund börja tappa bakdelen och detta händer mellan 7 månader och 2 års ålder. Då vi har labrador i våra hundar är det också viktigt att man ser till att föräldrarna är testade för detta för att minska risken att detta framkommer. Då man testat detta ett tag så är det inget man ser ofta, men inget man vill ska komma fram igen varken hos labradoodle eller hos labradoren. Det är en recessiv gen och testas med DNA test.</p>
-              </div>
-              <button type="button" class="expand-button"> PRA Progressiv Retinal Atrofi <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Detta är ögonsjukdom som leder till blindhet. Det är genetiska defekter där synceller i näthinnan förtvinar. Detta är också en recessiv gen.  Då detta är en sjukdom som finns hos hundar och då man inte kan se om den drabbas så är det viktigt att man dels ögonlyser alla avelshundar varje år och också att de DNA testats så att man har två friska föräldrar.</p>
-              </div>
-              <button type="button" class="expand-button"> VWD Von Willebrands Disease <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Von Willebrands Disease är en ärftlig blödningsstörning som kännetecknas av en brist på von Willebrand-faktor, ett specifikt protein som behövs för att hjälpa blodpropp. Ibland kallas pseudohemofili, vWD är den vanligaste ärftliga blödningsstörningen hos hundar och människor. Detta kontrolleras genom</p>
-              </div>
-              <button type="button" class="expand-button"> Patella Luxation <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Knäskål som hoppar ur led, vanligt bland mindre hundar. Även om man inte har de minsta hundraser kan det förekomma och patella kan leda till att man måste operera hunden då den har ont när den går och kanske till och med så att den inte vill använda benet. Detta testar vi alla hundar som går i avel för att minska risken för patella. Detta görs av en veterinär.</p>
-              </div>
-              <button type="button" class="expand-button"> Höfter <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Man tittar på hur höftkullan ligger i skålen och man kollar så att hunden inte har slappa höfter eller pålagringar i skålen. Vissa hundar märker man inte på att dom har höftfel eller att det märks först när de är gamla. Därför är det viktigt att man röntga alla hundar som går i avel. Man kan inte helt skydda sig mot höftfel, men man kan minska risken. Vi röntgar våra avelshundar vid 1-1,5 år första gången och vid 2-2,5 år andra gången för att säkerställa att höfterna är bra. Vår veterinär skickar alla plåtar till OFA, som är en organisation i USA som samarbetar med ALAEU och WALA och som godkänner avelshundarna för avel. Från OFA får vi ett certifikat på att att hunden är godkänd.</p>
-              </div>
-              <button type="button" class="expand-button"> Armbågar <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Man kollar så att armbågen ser fin ut och ligger där den ska utan pålagringar. Detta kan man inte heller skydda sig helt mot, men det minskar risken oerhört genom att röntga alla hundar som går i avel. Vi gör även detta vid 2 tillfällen för att säkerställa att röntgenplåtarna är lika. Vi skickar även detta till OFA.</p>
-              </div>
-              <button type="button" class="expand-button"> Ögonlysning <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="description">
-                  <p>Under ögonlysningen så ser en specialutbildad veterinär in i ögat för att se om det finns några ärftliga ögonsjukdomar. Detta görs varje år under tiden hunden går i avel. Om en hund ska gå i avel måste den gå igenom ögonlysningen helt. Så inga ärftliga sjukdomar får synas.</p>
-              </div>
-              <br>
-              <br>
-              <br>
-          </article>
-        </section>
+      <div class="page-title">
+        <img
+          src="assets/images/labradoodle-pup.png"
+          alt="Beige labradadoodle valp ligger i gräset"
+        />
+      </div>
+      <section class="breeding-intro">
+        <h1>Mål med avel</h1>
+        <p>
+          <strong
+            >Viktigast av allt för oss är friska och mentalt sunda
+            Labradoodle.</strong
+          >
+        </p>
+        <p>
+          Vi hälsotestar alla våra Labradoodle för att förhindra sjukdomar. Att
+          köpa en valp efter inte testade föräldrar kan få ödestigande
+          konsekvenser. Vi ser fram emot att aveln får fortsätta så här seriöst
+          samt att labradoodle utvecklas med den internationella riktlinje
+          vilket är viktig. Här är länk till rasstandarden för Australiensisk
+          Labradoodle
+        </p>
+        <p>
+          En del av grundkomponenterna hos oss är röntgen av höfter och
+          armbågar, undersökning av patella och ögonlysning som görs varje år.
+          Sedan skickas analyser i väg på en mängd olika sjukdomar vilka du kan
+          läsa mer om nedanför. Genom att ha känd status på våra hundar så
+          minskar vi risken att valparna får dessa deffekter.
+        </p>
+        <p>
+          Våra labradoodle är dessutom vackra exteriört och vi är noga med att
+          välja ut vilken linje vi avlar vidare på. Det finns alltför många
+          raser där man har valt att följa överdrivna exteriöra drag som har
+          lett till sjuka hundar tyvärr. Det vill vi inte vara med om utan vi
+          vill behålla friska labradoodlar med deras kända fantastiska
+          temperament vilket kan vara lite av ett detektivarbete och tar en del
+          tid.
+        </p>
+        <p>
+          Vi ser fram emot att aveln får fortsätta så här seriöst och ser inga
+          fördelar med att skynda utan tar god tid på oss att hitta bra linjer
+          som passar med varandra.
+        </p>
+      </section>
+      <section class="health-tests">
+        <article class="health-condition">
+          <h2>Viktiga hälsotester vi utför på våra avelshundar</h2>
+          <button type="button" class="expand-button">
+            Degenerativ Myelopati <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              DM, som är en sjukdom där hundens egna immunförsvar attackera
+              nervsystemet. Denna sjukdom märks inte förrän hunden kommer upp i
+              en ålder av 5 år. Det är viktig att man testar för att inga med
+              denna sjukdom ska gå i avel. Detta är också en recessiv gen. Det
+              krävs alltså att valpen får genen från båda föräldrarna för att
+              bli sjuk. För att vara på den säkra sidan så testar man båda
+              föräldrarna. Detta testas med DNA-test.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            Improper Coat <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Om man vill veta att man får en hund som inte fäller päls(lik
+              labradoren) så ska man också se till att uppfödaren testat sina
+              hundar för Improper Coat, som är en recessiv gen. Som om valpen
+              får en sådan gen av varje förälder så får den päls som liknar med
+              Labradoren. Om valpen har en som inte bär på genen så kan valpen
+              inte får denna päls, utan får den lockiga Labradoodlepälsen. Då
+              många väljer Labradoodle för att få en hund som har den lockiga
+              pälsen som inte fäller, så är detta viktigt att kolla också.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            EIC Exercise Induced Collapse
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              EIC är en neurologisk sjukdom där överföringen av impulser mellan
+              nerver och muskulatur inte fungerar som den ska. Denna sjukdom har
+              hittats hos Labradoren och en sjuk hund börja tappa bakdelen och
+              detta händer mellan 7 månader och 2 års ålder. Då vi har labrador
+              i våra hundar är det också viktigt att man ser till att
+              föräldrarna är testade för detta för att minska risken att detta
+              framkommer. Då man testat detta ett tag så är det inget man ser
+              ofta, men inget man vill ska komma fram igen varken hos
+              labradoodle eller hos labradoren. Det är en recessiv gen och
+              testas med DNA test.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            PRA Progressiv Retinal Atrofi
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Detta är ögonsjukdom som leder till blindhet. Det är genetiska
+              defekter där synceller i näthinnan förtvinar. Detta är också en
+              recessiv gen. Då detta är en sjukdom som finns hos hundar och då
+              man inte kan se om den drabbas så är det viktigt att man dels
+              ögonlyser alla avelshundar varje år och också att de DNA testats
+              så att man har två friska föräldrar.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            VWD Von Willebrands Disease <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Von Willebrands Disease är en ärftlig blödningsstörning som
+              kännetecknas av en brist på von Willebrand-faktor, ett specifikt
+              protein som behövs för att hjälpa blodpropp. Ibland kallas
+              pseudohemofili, vWD är den vanligaste ärftliga blödningsstörningen
+              hos hundar och människor. Detta kontrolleras genom
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            Patella Luxation <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Knäskål som hoppar ur led, vanligt bland mindre hundar. Även om
+              man inte har de minsta hundraser kan det förekomma och patella kan
+              leda till att man måste operera hunden då den har ont när den går
+              och kanske till och med så att den inte vill använda benet. Detta
+              testar vi alla hundar som går i avel för att minska risken för
+              patella. Detta görs av en veterinär.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            Höfter <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Man tittar på hur höftkullan ligger i skålen och man kollar så att
+              hunden inte har slappa höfter eller pålagringar i skålen. Vissa
+              hundar märker man inte på att dom har höftfel eller att det märks
+              först när de är gamla. Därför är det viktigt att man röntga alla
+              hundar som går i avel. Man kan inte helt skydda sig mot höftfel,
+              men man kan minska risken. Vi röntgar våra avelshundar vid 1-1,5
+              år första gången och vid 2-2,5 år andra gången för att säkerställa
+              att höfterna är bra. Vår veterinär skickar alla plåtar till OFA,
+              som är en organisation i USA som samarbetar med ALAEU och WALA och
+              som godkänner avelshundarna för avel. Från OFA får vi ett
+              certifikat på att att hunden är godkänd.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            Armbågar <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Man kollar så att armbågen ser fin ut och ligger där den ska utan
+              pålagringar. Detta kan man inte heller skydda sig helt mot, men
+              det minskar risken oerhört genom att röntga alla hundar som går i
+              avel. Vi gör även detta vid 2 tillfällen för att säkerställa att
+              röntgenplåtarna är lika. Vi skickar även detta till OFA.
+            </p>
+          </div>
+          <button type="button" class="expand-button">
+            Ögonlysning <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="description">
+            <p>
+              Under ögonlysningen så ser en specialutbildad veterinär in i ögat
+              för att se om det finns några ärftliga ögonsjukdomar. Detta görs
+              varje år under tiden hunden går i avel. Om en hund ska gå i avel
+              måste den gå igenom ögonlysningen helt. Så inga ärftliga sjukdomar
+              får synas.
+            </p>
+          </div>
+          <br />
+          <br />
+          <br />
+        </article>
+      </section>
     </main>
-    
+
     <footer>
       <h3>101 Labradoodles</h3>
       <div class="contact-container">
         <div class="contact-details">
           <p>Email: sanna@101tassar.se</p>
-          <p>Adress: <a href="https://g.co/kgs/SejdAV7">Torvhögsvägen 49, 424 91 Olofstorp  <i class="fa-solid fa-location-dot"></i></a></p>
-          <p>Org.nr: 800225-0226 </p>
+          <p>
+            Adress:
+            <a href="https://g.co/kgs/SejdAV7"
+              >Torvhögsvägen 49, 424 91 Olofstorp
+              <i class="fa-solid fa-location-dot"></i
+            ></a>
+          </p>
+          <p>Org.nr: 800225-0226</p>
         </div>
         <div class="social-details">
-          <a href="https://www.facebook.com/Labradoodlepuppie/?locale=sv_SE" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/101labradoodles/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://101tassar.se/" target="_blank"><i class="fa-solid fa-paw"></i></a>
+          <a
+            href="https://www.facebook.com/Labradoodlepuppie/?locale=sv_SE"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/101labradoodles/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://101tassar.se/" target="_blank"
+            ><i class="fa-solid fa-paw"></i
+          ></a>
         </div>
       </div>
       <p>© 2020 by 101 Labradoodles</p>
     </footer>
     <script>
-      document.querySelector('.nav-link.dropdown-toggle').addEventListener('click', function(e) {
-        if (e.target.tagName === 'A' && e.target.getAttribute('href') === 'intresseanmalan.html') {
-          window.location.href = 'intresseanmalan.html';
-        }
-      });
+      document
+        .querySelector(".nav-link.dropdown-toggle")
+        .addEventListener("click", function (e) {
+          if (
+            e.target.tagName === "A" &&
+            e.target.getAttribute("href") === "intresseanmalan.html"
+          ) {
+            window.location.href = "intresseanmalan.html";
+          }
+        });
     </script>
+    <script>
+      document
+        .querySelector(".nav-link.dropdown-toggle")
+        .addEventListener("click", function (e) {
+          if (
+            e.target.tagName === "A" &&
+            e.target.getAttribute("href") === "intresseanmalan.html"
+          ) {
+            window.location.href = "intresseanmalan.html";
+          }
+        });
+
+      window.onscroll = function () {
+        var header = document.getElementById("myHeader");
+        console.log(window.scrollY); // For debugging, see the scroll position in the console
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      };
+    </script>
+    <!-- Bootstrap JavaScript (för att dropdowns ska fungera) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript for expand button -->
-    <script src="/assets/js/accordian.js"></script>
+    <script>
+      var buttons = document.getElementsByClassName("expand-button");
+      var currentActiveButton = null;
+      var currentActiveDescription = null;
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+          // Get the icon element inside the clicked button
+          var icon = this.querySelector("i");
+          // If there is an active button and it's not the current one
+          if (currentActiveButton && currentActiveButton !== this) {
+            // Reset previous button and description
+            currentActiveButton.style.backgroundColor = "#ebeaea";
+            currentActiveDescription.style.display = "none";
+            // Reset the icon of the previous button
+            var prevIcon = currentActiveButton.querySelector("i");
+            prevIcon.classList.remove("fa-chevron-up");
+            prevIcon.classList.add("fa-chevron-down");
+          }
+
+          var content = this.nextElementSibling;
+
+          if (this === currentActiveButton) {
+            // If clicking the same button, toggle the description and background color
+            content.style.display =
+              content.style.display === "block" ? "none" : "block";
+            this.style.backgroundColor =
+              content.style.display === "block" ? "#ebeaea" : "#ebeaea";
+            // Toggle the icon
+            if (content.style.display === "block") {
+              icon.classList.remove("fa-chevron-down");
+              icon.classList.add("fa-chevron-up");
+            } else {
+              icon.classList.remove("fa-chevron-up");
+              icon.classList.add("fa-chevron-down");
+            }
+
+            currentActiveButton =
+              content.style.display === "block" ? this : null;
+            currentActiveDescription =
+              content.style.display === "block" ? content : null;
+          } else {
+            // Set the new button and description as active
+            this.style.backgroundColor = "#ebeaea";
+            content.style.display = "block";
+            // Change the icon to show an 'up' arrow when active
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+
+            currentActiveButton = this;
+            currentActiveDescription = content;
+          }
+        });
+      }
+    </script>
   </body>
 </html>
