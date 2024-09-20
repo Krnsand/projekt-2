@@ -1,23 +1,26 @@
 .bokning-open-text {
   width: 50%;
-  margin: 10rem auto 5rem;
+  margin: 5rem auto 5rem;
   text-align: center;
 }
 .bokning-open-text h1 {
   color: #b38a4c;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
-  font-weight: 600;
   margin: 40px auto;
 }
+
+h2 {
+  color: #5a464c;
+  font-size: 1.7rem;
+}
+
 .bokning-open-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
-.bokning-open-text .sub-text {
-  font-size: 0.9rem;
-}
+
 .btn-bokning {
   background-color: #53131e;
   color: white;
@@ -40,10 +43,10 @@
 /* Slideshow som innehåller alla bilder */
 .slideshow {
   display: flex;
-  width: 800%;
+  width: 1200%;
   /* 8 bilder = 100% * 8 (för 8 bilder, justera om det är färre eller fler) */
   height: 100%;
-  animation: slide 40s ease-in-out infinite;
+  animation: slide 60s ease-in-out infinite;
   /* Total animationstid: 8 bilder * 5 sekunder per bild = 40s */
 }
 /* Individuella bilder */
@@ -89,5 +92,11 @@
   100% {
     transform: translateX(0);
     /* Återgå till första bilden */
+  }
+}
+
+@media (max-width: 890px) {
+  .bokning-open-text {
+    width: 80%;
   }
 }

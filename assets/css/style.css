@@ -32,10 +32,10 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-.logo-text {
+/* .logo-text {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .navbar {
   padding: 0%;
@@ -101,8 +101,22 @@ header {
 
 /* För att säkerställa att dropdowns stängs korrekt på mobiler */
 @media (max-width: 768px) {
+
+.home-logo {
+  width: 5rem;
+}
+
+.logo-text {
+  font-size: 0.6rem;
+}
+
   .dropdown-menu {
     position: static; /* På mindre skärmar visas dropdowns inline */
+    margin: 0 2rem 0;
+  }
+
+  .dropdown-item {
+    text-align: center;
   }
 }
 

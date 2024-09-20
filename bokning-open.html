@@ -62,15 +62,7 @@
             <ul class="navbar-nav">
               <!-- Dropdown for Labradoodle -->
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="index.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Labradoodle
-                </a>
+                <a class="nav-link" href="index.html">Labradoodle</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="rasstandard.html">
@@ -87,15 +79,9 @@
 
               <!-- Dropdown for Intresseanmälan -->
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="intresseanmaelan.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link" href="intresseanmaelan.html"
+                  >Intresseanmälan</a
                 >
-                  Intresseanmälan
-                </a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="bokning-open.html"
@@ -114,9 +100,12 @@
                 <a class="nav-link" href="gdpr.html">GDPR</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-outline" type="submit">
-                  Bokning öppen
-                </button>
+                <a
+                  class="btn btn-outline"
+                  href="bokning-open.html"
+                  role="button"
+                  >Bokning öppen</a
+                >
               </li>
             </ul>
           </div>
@@ -125,8 +114,8 @@
     </header>
     <main>
       <div class="bokning-open-text">
-        <h1>BOKNING ÖPPEN</h1>
-        <h3>Valpar från Tinna & Poker</h3>
+        <h1>Bokning Öppen</h1>
+        <h2>Valpar från Tinna & Poker</h2>
         <p>
           Labradoodle valparna från våran intelligenta charmiga dam Tinna och
           pappa Poker från HÖÖKS labradoodle. Tinna är den vänligaste av själar
@@ -137,10 +126,29 @@
         <br />
         <p>Valparna flyttar till sina nya 22 okt, endast en flicka kvar.</p>
         <br />
-        <button class="btn btn-bokning" type="submit">Bokning öppen</button>
+        <a class="btn btn-bokning" href="intresseanmaelan.html" role="button"
+          >Anmälan</a
+        >
       </div>
       <div class="slideshow-container">
         <div class="slideshow">
+          <img
+            src="assets/images/white-doodle-pup.png"
+            alt="Vit labradoodle valp"
+          />
+          <img
+            src="assets/images/brown-doodle-pup.png"
+            alt="Brun labradoodle valp"
+          />
+          <img
+            src="assets/images/tripple-doodle-puppers.png"
+            alt="Två bruna labradoodle valpar och en vit labradoodle valp"
+          />
+          <img
+            src="assets/images/lightbrown-doodle-pup.png"
+            alt="Ljusbrun labradoodle valp"
+          />
+          <!-- Dubbel uppsättning bilder för sömlös loop -->
           <img
             src="assets/images/white-doodle-pup.png"
             alt="Vit labradoodle valp"
@@ -220,7 +228,8 @@
             window.location.href = "intresseanmalan.html";
           }
         });
-
+    </script>
+    <script>
       window.onscroll = function () {
         var header = document.getElementById("myHeader");
         console.log(window.scrollY); // For debugging, see the scroll position in the console

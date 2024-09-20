@@ -3,8 +3,9 @@
 }
 
 h1 {
-  color: #53131E;
+  color: #B38A4C;
   font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
   margin: 40px auto 20px auto;
   text-align: center;
 }
@@ -24,6 +25,7 @@ h1 {
   padding: 40px;
   background-color: #ebeaea;
   border-radius: 20px;
+  text-align: center;
 }
 .about .about-text p {
   font-family: "Poppins", sans-serif;
@@ -48,6 +50,9 @@ h1 {
   }
 }
 @media (max-width: 890px) {
+  .about {
+    width: 80%;
+  }
   .about .about-text {
     width: 590px;
     padding: 20px;

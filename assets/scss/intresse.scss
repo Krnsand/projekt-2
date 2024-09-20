@@ -8,19 +8,18 @@ $rose-ebony: #5a464c;
 
 .puppy-section {
   display: flex;
-  height: 100vh;
   width: 100vw;
-}
 
-.puppy-image-container {
-  flex: 1; /* Takes up 50% of the space */
-  max-width: 50vw; /* Ensure it does not grow beyond 50% */
-}
-
-.puppy-form-img {
-  width: 100%; /* Ensure the image fills the container */
-  height: 100%; /* Make the image cover the entire container */
-  object-fit: cover; /* Makes sure the image scales properly without stretching */
+  .puppy-image-container {
+    flex: 1; /* Takes up 50% of the space */
+    max-width: 50vw; /* Ensure it does not grow beyond 50% */
+    
+    .puppy-form-img {
+      width: 100%; /* Ensure the image fills the container */
+      height: 100%; /* Make the image cover the entire container */
+      object-fit: cover; /* Makes sure the image scales properly without stretching */
+          }
+  }
 }
 
 .puppy-text {
@@ -104,19 +103,27 @@ form input[type="submit"]:hover {
 }
 
 /* Large Screens (1200px and above) */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .puppy-section {
-    flex-direction: row;
-    // padding: 1rem;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .puppy-image-container {
+      max-width: 100%;
+      text-align: center;
+
+      .puppy-form-img {
+        margin: auto;
+        height: auto;
+        width: 50%;
+      }
+    }
   }
 
   .puppy-text h1 {
     font-size: 2.5rem;
   }
-
-  // .puppy-text p {
-  //   font-size: 1.2rem;
-  // }
 
   .form-container {
     max-width: 50rem;
@@ -124,21 +131,20 @@ form input[type="submit"]:hover {
 }
 
 /* Tablet Screens (between 600px and 1200px) */
-@media (max-width: 1200px) and (min-width: 890px) {
+@media (max-width: 890px) {
   .puppy-section {
-    flex-direction: column;
-    align-items: flex-start;
+   
+    .puppy-image-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .puppy-form-img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
-  .puppy-image-container {
-    width: 100%;
-    text-align: center;
-  }
-
-  .puppy-form-img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .puppy-text h1 {
     font-size: 2rem;
@@ -153,12 +159,16 @@ form input[type="submit"]:hover {
 @media (max-width: 600px) {
   .puppy-section {
     flex-direction: column;
-    padding: 20px;
+
+    .puppy-image-container {
+      margin-bottom: 20px;
+    }
+
+    .puppy-form-img {
+      width: 100%;
+    }
   }
 
-  .puppy-image-container {
-    margin-bottom: 20px;
-  }
 
   .puppy-text h1 {
     font-size: 1.5rem;

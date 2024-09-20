@@ -26,12 +26,11 @@ $breakpoint-mobile: 600px;
         color: $primary-color;
         font-family: $font-title;
         font-size: 2.5rem;
-        font-weight: 600;
         margin: auto;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: $font-body;
         font-weight: 300;
         max-width: 70%;
@@ -162,7 +161,7 @@ $breakpoint-mobile: 600px;
         h2 {
             color: $primary-color;
             font-family: $font-title;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 400;
             margin: 40px;
             text-wrap: none;
@@ -290,9 +289,11 @@ $breakpoint-mobile: 600px;
         }
     }
 }
+
 @media (max-width: $breakpoint-tablet) {
     .current-puppies {
         width: 80%;
+        padding: 20px;
     }
 
     .image-container {
@@ -307,17 +308,18 @@ $breakpoint-mobile: 600px;
     }
 
     .interest-and-plans {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
     .card-container {
         flex-wrap: wrap;
         margin: auto;
+        padding: 20px 0px;
     }
 
     .card {
-        width: 80%;
+        width: 90%;
     }
 
     .card-body {
@@ -364,6 +366,10 @@ $breakpoint-mobile: 600px;
 @media (max-width: $breakpoint-mobile) { 
     .current-puppies {
         width: 90%;
+
+        p {
+            font-size: 0.9rem;
+        }
     }
 
     .image-container {
@@ -377,6 +383,10 @@ $breakpoint-mobile: 600px;
     }
 
     .about-labradoodle {
+        p {
+            font-size: 0.8rem;
+        }
+
         button {
             width: 90%;
             margin: auto;
@@ -399,6 +409,29 @@ $breakpoint-mobile: 600px;
             a {
                 color: #ebeaea;
             }
+        }
+    }
+
+    .card {
+        width: 90%;
+    
+        .card-body {
+            height: 15rem;
+
+            h2 {
+                font-size: 1.5rem;
+                
+            }
+            
+            p {
+                font-size: 0.9rem;
+            }
+
+            a[role=button] {
+                bottom: 20px;
+                font-size: 0.8em;
+              }
+            
         }
     }
 }
