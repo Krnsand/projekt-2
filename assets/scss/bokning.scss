@@ -96,3 +96,10 @@ $breakpoint-mobile: 600px;
     transform: translateX(0); /* Återgå till första bilden */
   }
 }
+
+
+@media (max-width: 890px) {
+  .bokning-open-text {
+    width: 80%;
+  }
+}
