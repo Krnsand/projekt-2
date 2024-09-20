@@ -19,7 +19,7 @@ footer {
         color: $primary-color;
         font-family: $font-title;
         font-size: 1.5em;
-        margin: 60px auto 0 auto;
+        margin: 60px auto 20px auto;
     }
 
     .contact-container {
@@ -35,6 +35,15 @@ footer {
             text-decoration: none;
         }
 
+        .contact-details {
+
+            i.fa-location-dot:hover {
+                color: red;
+                font-size: 1.5em;
+            }
+
+        }
+
         .social-details {
             display: flex;
             align-items: center;
@@ -42,6 +51,21 @@ footer {
                 color: white;
                 font-size: 2em;
                 padding-right: 20px;
+            }
+
+            i.fa-facebook:hover {
+                color: #1877F2;
+                font-size: 2.3em;
+            }
+
+            i.fa-instagram:hover {
+                color: #d62976;
+                font-size: 2.3em;
+            }
+            
+            i.fa-paw:hover {
+                color: $primary-color;
+                font-size: 2.3em;
             }
         }
     }
@@ -51,7 +75,7 @@ footer {
         font-family: $font-body;
         font-size: 0.7em;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
     }
 }
 

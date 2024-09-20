@@ -162,6 +162,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.card .card-body a[role=button]:hover {
+  background-color: #5A464C;
+}
 
 .about-labradoodle {
   display: flex;
@@ -210,6 +213,9 @@
   font-weight: 600;
   border-radius: 2em;
   padding: 15px 15px;
+}
+.about-labradoodle button:hover {
+  background-color: #caad82;
 }
 .about-labradoodle a {
   margin: 0 auto 60px auto;
