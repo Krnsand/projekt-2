@@ -241,3 +241,101 @@ form input[type="submit"]:hover {
     transform: translateX(-400%);
   } /* Skrolla genom 4 bilder (400%) */
 } /*# sourceMappingURL=bokning.css.map */
+
+
+/*-------------form------*/
+
+
+/* Large Screens (1200px and above) */
+@media (max-width: 1200px) {
+  .puppy-section {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .puppy-image-container {
+      max-width: 100%;
+      text-align: center;
+
+      .puppy-form-img {
+        margin: auto;
+        height: auto;
+        width: 50%;
+      }
+    }
+  }
+
+  .puppy-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .form-container {
+    max-width: 50rem;
+  }
+}
+
+/* Tablet Screens (between 600px and 1200px) */
+@media (max-width: 890px) {
+  .puppy-section {
+   
+    .puppy-image-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .puppy-form-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+
+  .puppy-text h1 {
+    font-size: 2rem;
+  }
+
+  .puppy-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Screens (below 600px) */
+@media (max-width: 600px) {
+  .puppy-section {
+    flex-direction: column;
+
+    .puppy-image-container {
+      margin-bottom: 20px;
+    }
+
+    .puppy-form-img {
+      width: 100%;
+    }
+  }
+
+
+  .puppy-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .puppy-text p {
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+  }
+}
