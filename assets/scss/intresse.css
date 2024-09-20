@@ -4,13 +4,11 @@
   height: 100vh;
   width: 100vw;
 }
-
-.puppy-image-container {
+.puppy-section .puppy-image-container {
   flex: 1; /* Takes up 50% of the space */
   max-width: 50vw; /* Ensure it does not grow beyond 50% */
 }
-
-.puppy-form-img {
+.puppy-section .puppy-image-container .puppy-form-img {
   width: 100%; /* Ensure the image fills the container */
   height: 100%; /* Make the image cover the entire container */
   -o-object-fit: cover;
@@ -95,9 +93,16 @@ form input[type=submit]:hover {
   }
 }
 /* Large Screens (1200px and above) */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .puppy-section {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .puppy-section .puppy-image-container {
+    max-width: 100%;
+  }
+  .puppy-section .puppy-image-container .puppy-form-img {
+    margin: auto;
   }
   .puppy-text h1 {
     font-size: 2.5rem;
@@ -107,11 +112,7 @@ form input[type=submit]:hover {
   }
 }
 /* Tablet Screens (between 600px and 1200px) */
-@media (max-width: 1200px) and (min-width: 890px) {
-  .puppy-section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+@media (max-width: 890px) {
   .puppy-image-container {
     width: 100%;
     text-align: center;
