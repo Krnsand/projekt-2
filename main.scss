@@ -176,7 +176,7 @@ $breakpoint-mobile: 600px;
             margin: 20px auto;
             max-width: 20rem;
         }
-        a[role=button]{
+        a[role=button] {
             position: absolute;
             bottom: 40px;
             background-color: $dark-red;
@@ -189,6 +189,10 @@ $breakpoint-mobile: 600px;
             left: 50%;  
             transform: translateX(-50%);
           }
+
+        a[role=button]:hover {
+            background-color: $rose-ebony;
+        }
         
     }
 }
@@ -244,6 +248,10 @@ $breakpoint-mobile: 600px;
         font-weight: 600;
         border-radius: 2em;
         padding: 15px 15px;
+    }
+
+    button:hover {
+        background-color: #caad82;
     }
 
     a {

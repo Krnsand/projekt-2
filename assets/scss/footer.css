@@ -8,7 +8,7 @@ footer h3 {
   color: #B38A4C;
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
-  margin: 60px auto 0 auto;
+  margin: 60px auto 20px auto;
 }
 footer .contact-container {
   width: 70%;
@@ -52,7 +52,7 @@ footer p {
   font-family: "Poppins", sans-serif;
   font-size: 0.7em;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
