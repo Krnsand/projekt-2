@@ -8,7 +8,7 @@ $rose-ebony: #5a464c;
 
 .puppy-section {
   display: flex;
-  height: 100vh;
+  
   width: 100vw;
 
   .puppy-image-container {
@@ -107,13 +107,17 @@ form input[type="submit"]:hover {
 @media (max-width: 1200px) {
   .puppy-section {
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
 
     .puppy-image-container {
       max-width: 100%;
+      text-align: center;
 
       .puppy-form-img {
         margin: auto;
+        height: auto;
+        width: 50%;
       }
     }
   }
@@ -130,19 +134,19 @@ form input[type="submit"]:hover {
 /* Tablet Screens (between 600px and 1200px) */
 @media (max-width: 890px) {
   .puppy-section {
-    // flex-direction: column;
-    // align-items: flex-start;
+   
+    .puppy-image-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .puppy-form-img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
-  .puppy-image-container {
-    width: 100%;
-    text-align: center;
-  }
 
-  .puppy-form-img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .puppy-text h1 {
     font-size: 2rem;

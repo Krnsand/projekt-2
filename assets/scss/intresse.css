@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .puppy-section {
   display: flex;
-  height: 100vh;
   width: 100vw;
 }
 .puppy-section .puppy-image-container {
@@ -96,13 +95,16 @@ form input[type=submit]:hover {
 @media (max-width: 1200px) {
   .puppy-section {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   .puppy-section .puppy-image-container {
     max-width: 100%;
+    text-align: center;
   }
   .puppy-section .puppy-image-container .puppy-form-img {
     margin: auto;
+    height: auto;
+    width: 50%;
   }
   .puppy-text h1 {
     font-size: 2.5rem;
@@ -113,11 +115,11 @@ form input[type=submit]:hover {
 }
 /* Tablet Screens (between 600px and 1200px) */
 @media (max-width: 890px) {
-  .puppy-image-container {
+  .puppy-section .puppy-image-container {
     width: 100%;
     text-align: center;
   }
-  .puppy-form-img {
+  .puppy-section .puppy-form-img {
     max-width: 100%;
     height: auto;
   }
