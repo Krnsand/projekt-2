@@ -161,11 +161,16 @@ form input[type="submit"]:hover {
 @media (max-width: 600px) {
   .puppy-section {
     flex-direction: column;
+
+    .puppy-image-container {
+      margin-bottom: 20px;
+    }
+
+    .puppy-form-img {
+      width: 100%;
+    }
   }
 
-  .puppy-image-container {
-    margin-bottom: 20px;
-  }
 
   .puppy-text h1 {
     font-size: 1.5rem;
