@@ -132,7 +132,6 @@ form input[type=submit]:hover {
 @media (max-width: 600px) {
   .puppy-section {
     flex-direction: column;
-    padding: 20px;
   }
   .puppy-image-container {
     margin-bottom: 20px;
