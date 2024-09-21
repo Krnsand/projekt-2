@@ -16,7 +16,7 @@ $breakpoint-mobile: 600px;
 
 .current-puppies {
     width: 60%;
-    margin: 60px auto 0px auto;
+    margin: 40px auto 0px auto;
     padding: 40px;
     text-align: center;
     background-color: white;
@@ -33,7 +33,7 @@ $breakpoint-mobile: 600px;
         font-size: 1rem;
         font-family: $font-body;
         font-weight: 300;
-        max-width: 70%;
+        max-width: 80%;
         margin: 40px auto;
     }
 
@@ -44,7 +44,7 @@ $breakpoint-mobile: 600px;
 
 .image-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 40px auto;
     gap: 40px;
 
@@ -130,7 +130,7 @@ $breakpoint-mobile: 600px;
 }
 
 .interest-and-plans {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -140,8 +140,8 @@ $breakpoint-mobile: 600px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 40px auto 80px auto;
+    gap: 20px;
+    margin: 0px auto 80px auto;
 }
 
 .card {
@@ -213,7 +213,7 @@ $breakpoint-mobile: 600px;
             height: auto;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -65%);
             min-height: 100%;
             min-width: 100%;
         }
@@ -378,6 +378,15 @@ $breakpoint-mobile: 600px;
     
             span {
                 width:40%;
+            }
+        }
+    }
+
+    .quote-box {
+        .quote {
+
+            p {
+                font-size: 1.5rem;
             }
         }
     }
