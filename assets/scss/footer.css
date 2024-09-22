@@ -9,6 +9,7 @@ footer h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   margin: 60px auto 20px auto;
+  text-shadow: 0.5px 0.5px #FFF7C8;
 }
 footer .contact-container {
   width: 70%;

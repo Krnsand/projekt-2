@@ -25,6 +25,7 @@
 .puppy-text h1 {
   font-family: "Roboto", sans-serif;
   color: #b38a4c;
+  text-shadow: 0.5px 0.5px black;
 }
 .puppy-text p {
   font-family: "Poppins", sans-serif;
