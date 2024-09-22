@@ -33,6 +33,14 @@ $breakpoint-mobile: 600px;
   }
 }
 
+.hööks {
+  text-decoration: none;
+
+  .hööks:hover {
+    font-weight: bold;
+  }
+}
+
 .btn-bokning {
   background-color: $dark-red;
   color: white;
