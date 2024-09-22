@@ -27,6 +27,7 @@ $breakpoint-mobile: 600px;
         font-family: $font-title;
         font-size: 2.5rem;
         margin: auto;
+        text-shadow: 0.5px 0.5px black;
     }
 
     p {
@@ -165,6 +166,7 @@ $breakpoint-mobile: 600px;
             font-weight: 400;
             margin: 40px;
             text-wrap: none;
+            text-shadow: 0.5px 0.5px black;
         }
         
         p {
@@ -226,6 +228,7 @@ $breakpoint-mobile: 600px;
         max-width: 50%;
         text-align: center;
         margin: 60px auto;
+        text-shadow: 0.5px 0.5px black;
     }
 
     p {
@@ -247,6 +250,7 @@ $breakpoint-mobile: 600px;
         font-weight: 600;
         border-radius: 2em;
         padding: 15px 15px;
+        text-shadow: 0.5px 0.5px black;
     }
 
     button:hover {
