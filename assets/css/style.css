@@ -32,11 +32,6 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-/* .logo-text {
-  display: flex;
-  flex-direction: column;
-} */
-
 .navbar {
   padding: 0%;
 }
@@ -140,11 +135,18 @@ header {
   }
 }
 
-.navbar-toggler-icon {
-  background-color: #caad82;
-  border: none;
+.navbar-toggler{
+  border: solid 1px #caad82;
+  color: #caad82;
+  padding: 4px 8px
 }
 
-.navbar-toggler-icon:visited {
-  border-color: none;
+.navbar-toggler-icon {
+  background-color: #caad82;
+}
+
+/* Remove the focus outline when clicked */
+.navbar-toggler:focus {
+  outline: none; /* Removes the focus outline */
+  box-shadow: none; 
 }

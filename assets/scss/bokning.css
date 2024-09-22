@@ -21,6 +21,14 @@ h2 {
   font-weight: 300;
 }
 
+.hööks {
+  color: black;
+}
+
+.hööks:hover {
+  font-weight: bold;
+}
+
 .btn-bokning {
   background-color: #53131e;
   color: white;
