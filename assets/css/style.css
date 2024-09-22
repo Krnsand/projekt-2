@@ -136,14 +136,17 @@ header {
 }
 
 .navbar-toggler{
-  border: solid 2px #caad82;
+  border: solid 1px #caad82;
+  color: #caad82;
+  padding: 4px 8px
 }
 
 .navbar-toggler-icon {
   background-color: #caad82;
-  /* border: none; */
 }
 
-.navbar-toggler-icon:visited {
-  border-color: none;
+/* Remove the focus outline when clicked */
+.navbar-toggler:focus {
+  outline: none; /* Removes the focus outline */
+  box-shadow: none; 
 }
