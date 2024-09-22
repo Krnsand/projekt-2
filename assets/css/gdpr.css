@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Roboto", sans-serif;
   color: #53131E;
   padding-bottom: 5px; /*För att få avstånd mellan texten och rubriken*/
   font-size: 1.7rem;
