@@ -85,7 +85,7 @@ header {
 }
 
  #myBtn:hover {
-  color: #caad82; /* Add a dark-grey background on hover */
+  color: #caad82;
  }
 
 @media (max-width: 768px) {
