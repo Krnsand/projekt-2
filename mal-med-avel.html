@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Labradoodle-kennel samt hunddagis i Olofstorp utanför Göteborg. Läs mer om kenneln 101 Labradoodle, aktuella valpar, rasstandard och mål med avel. Bokning öppen. Gör en intresseanmälan. Läs mer om hundagiset 101 Tassar.">
+    <title>Mål med Avel | 101 Labradoodles</title>
+
     <!-- Font Awesome import -->
     <script
       src="https://kit.fontawesome.com/7a67359ae7.js"
@@ -26,16 +29,10 @@
     <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
     <!-- CSS styles -->
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/scss/main.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="assets/scss/mal-med-avel.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="assets/scss/mal-med-avel.css" rel="stylesheet" type="text/css" />
     <link href="assets/scss/footer.css" rel="stylesheet" type="text/css" />
-    <meta name="description" content="Labradoodle-kennel samt hunddagis i Olofstorp utanför Göteborg. Läs mer om kenneln 101 Labradoodle, aktuella valpar, rasstandard och mål med avel. Bokning öppen. Gör en intresseanmälan. Läs mer om hundagiset 101 Tassar.">
-    <title>Mål med Avel | 101 Labradoodle</title>
   </head>
   <body>
     <header id="myHeader">
@@ -99,7 +96,7 @@
 
               <!-- Other menu items -->
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Om 101 Labradoodle</a>
+                <a class="nav-link" href="about.html">Om 101 Labradoodles</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gdpr.html">GDPR</a>
@@ -298,6 +295,7 @@
           <br />
         </article>
       </section>
+      <i class="fa-solid fa-circle-chevron-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
     </main>
 
     <footer>
@@ -433,5 +431,26 @@
         });
       }
     </script>
+        <script>
+          // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+        </script>
   </body>
 </html>
