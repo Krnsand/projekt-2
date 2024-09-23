@@ -240,32 +240,26 @@ $breakpoint-mobile: 600px;
         margin: 0 auto 60px auto;
         line-height: 1.7rem;
     }
-    
-    button {
-        background-color: #caad82;
-        color: $dark-red;
-        width: 20rem;
-        border: none;
-        font-size: 1em;
-        font-weight: 600;
-        border-radius: 2em;
-        padding: 15px 15px;
-        
-    }
-
-    button:hover {
-        background-color: $primary-color;
-        color: white;
-    }
 
     a {
         margin: 0 auto 60px auto;
     }
+
+    .index-button {
+        padding: 1rem;
+    }
+
+    .index-button:active:focus {
+        background-color: $primary-color; 
+    }
+
+    .index-button:focus {
+        background-color: $primary-color;
+    }
 }
 
-.index-button {
-    padding: 1rem;
-}
+
+
 
 @media (max-width: $breakpoint-large-screen) {
     

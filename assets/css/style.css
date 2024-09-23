@@ -88,6 +88,11 @@ header {
   color: #caad82;
  }
 
+ #myBtn:focus  {
+  outline: 2px solid rgb(84, 84, 249); 
+  border: 2px solid white;    
+ }  
+
 @media (max-width: 768px) {
   .navbar .dropdown-menu {
     top: auto; /* Reset default positioning */
@@ -167,6 +172,15 @@ header {
 .btn-outline:hover {
   background-color: #B38A4C;
 }
+
+.btn-outline:active:focus {
+  background-color: #B38A4C;  
+}
+
+.btn-outline:focus {
+  background-color: #B38A4C   ;
+}
+
 
 @media (max-width: 991px) {
   .btn-outline {
