@@ -75,7 +75,6 @@ $breakpoint-mobile: 600px;
             padding: 18px;
             width: 100%;
             border: none;
-            border-radius: 20px 20px 0 0;
             text-align: left;
             outline: none;
             font-size: 1rem;
@@ -84,6 +83,10 @@ $breakpoint-mobile: 600px;
 
         .expand-button:hover {
             color: $dark-red;
+        }
+
+        .expand-button:focus {
+            background-color: #c6b4b4;
         }
 
         .description {
