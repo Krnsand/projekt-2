@@ -70,6 +70,24 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ #myBtn:hover {
+  color: #caad82; /* Add a dark-grey background on hover */
+ }
+
 @media (max-width: 768px) {
   .navbar .dropdown-menu {
     top: auto; /* Reset default positioning */
