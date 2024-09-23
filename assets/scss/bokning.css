@@ -34,6 +34,7 @@ h2 {
   background-color: #53131e;
   color: white;
   border-radius: 2em;
+  padding: 1rem;
 }
 .btn-bokning:hover {
   background-color: #79434c;

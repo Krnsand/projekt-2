@@ -1,4 +1,4 @@
-![Responsive Mockup](https://github.com/Krnsand/projekt-2/blob/main/images/readme-hero.png)
+![Responsive Mockup](https://github.com/Krnsand/projekt-2/./assets/images/readme-hero.png)
 
 [Click to View Live Website](https://krnsand.github.io/projekt-2/)
 
