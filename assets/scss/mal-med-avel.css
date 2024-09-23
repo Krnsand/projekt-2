@@ -57,7 +57,6 @@
   padding: 18px;
   width: 100%;
   border: none;
-  border-radius: 20px 20px 0 0;
   text-align: left;
   outline: none;
   font-size: 1rem;
@@ -65,6 +64,9 @@
 }
 .health-tests .health-condition .expand-button:hover {
   color: #53131E;
+}
+.health-tests .health-condition .expand-button:focus {
+  background-color: #c6b4b4;
 }
 .health-tests .health-condition .description {
   padding: 0 20px;
