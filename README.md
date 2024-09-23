@@ -1,10 +1,10 @@
-![Responsive Mockup](https://github.com/Krnsand/projekt-2/./assets/images/readme-hero.png)
+![Responsive Mockup](https://github.com/Krnsand/projekt-2/blob/main/assets/images/readme-hero.png)
 
 [Click to View Live Website](https://krnsand.github.io/projekt-2/)
 
 
 
-**### Betygskriterie Godkänt (G):**
+### Betygskriterie Godkänt (G):
 - [x] Hemsidan ska innehålla logotyp, navigering, semantisk korrekt HTMLoch sidfot. 
 - [x] Menyn ska innehålla korrekt utformade länkar som leder till repektive sida(2-4 sidor).
 - [x] Responsiv –Hemsidan ska vara responsiv, anpassad efter olika skärmstorlekar, ha minst en breakpoint = två skärmstorlekar, till exempel Mobil –Dator.
@@ -21,14 +21,41 @@
 - [x] Tillgänglighet –Hemsidan ska vara tillgänglig. Hemsidan ska även vara testad på minst två sätt (till exempel automatiska verktyg, användartestning och manuellt test). Beskriv mer utförligt om detta under redovisningen.
 - [x] Arbeta självständigt (inom gruppen) under hela projektets gång, visa att ni kan hantera problemlösning och ta egna beslut. Ni får självklart fråga om hjälp!
 
+--- 
 
+- __Breakpoints__
 
-1. Vi har arbetat utifrån 3 breakpoints: large-screen aka Desktop 1200px, tablet 890px, mobile 600px
+1. Vi har arbetat utifrån 3 breakpoints: 
+- large-screen aka Desktop 
+- 1200px, tablet 890px 
+- mobile 600px
 
-2. Vi har använt JavaScript för att göra våran header genomskinlig vid skroll, vi har använt JavaScript för att göra accordion menyer på Mål med Avel-sidan, vi har använt JavaScript på våran hamburger meny för mindre skärmar, vi har använt JavaScript på vår "Back to top" chevron på långa sidor, vi har använt CSS Animationer för bildspelet på Bokning Öppen-sidan.
+- __Dynamisk Funktionalitet__
 
-3. Vi har använt Bootstrap på nav-menyn, vi har använt Bootstrap på cardsen på första sidan, vi har använt Bootstrap på formuläret på Intresseanmälan
+2. Vi har använt
+- JavaScript för att göra våran header genomskinlig vid skroll
+- JavaScript för att göra accordion menyer på Mål med Avel-sidan
+- JavaScript vi har använt JavaScript på våran hamburger meny för mindre skärmar
+- vi har använt JavaScript på vår "Back to top" chevron på långa sidor
+- CSS Animationer för bildspelet på Bokning Öppen-sidan
 
-4. Vi har testat alla våra sidor med Lighthouse, Wave, W3C. Vi har tabbat igenom alla element på alla sidor. Vi har kollat responsiviteten på alla olika skärmstorlekar i Inspektorn. Vi har testat alla knappar och länkar så att dom gör det dom ska.
+- __Ramverk__
+
+3. Vi har använt 
+- Bootstrap på nav-menyn 
+- Bootstrap på cardsen på första sidan
+- Bootstrap på formuläret på Intresseanmälan
+
+- __Tillgänglighet__
+
+4. Vi har testat alla våra sidor med 
+- Lighthouse
+- Wave
+- W3C 
+- Vi har tabbat igenom alla element på alla sidor
+- Vi har kollat responsiviteten på alla olika skärmstorlekar i Inspektorn
+- Vi har testat alla knappar och länkar så att dom gör det dom ska.
+
+- __Styling__
 
 5. Vi har använt oss av Sass. Dom flesta av våra sidor har en egen scss-fil som vi har använt, men headern är stylead i style.css då jag (Karin) inte fick igång sass direkt. Valpar och GDPR är stylead med vanlig css då Cattis har valt att använda sig av det.
