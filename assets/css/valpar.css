@@ -46,24 +46,11 @@
     flex-direction: row-reverse;
 }
 
-@media (max-width: 1200px) { 
-    .puppy-img {
-        margin: 0 auto;
-    }
-
-    .puppy-img img {
-        max-width: 100%;
-    }
-
-    .container-puppy {
-        flex-direction: column; /*Gör att row-reverse upphör vid mobilvy*/
-    } 
-} 
 .puppy-info {
     flex-grow: 2;
     text-align: center;
 }
-   
+
 h1 {
     color: #b38a4c;
     font-family: "Roboto", sans-serif;
@@ -101,3 +88,23 @@ p {
     max-width: 700px;
     margin: auto;
 }
+
+@media (max-width: 1200px) { 
+    .puppy-img {
+        margin: 0 auto;
+    }
+
+    .puppy-img img {
+        max-width: 100%;
+    }
+
+    .container-puppy {
+        flex-direction: column; /*Gör att row-reverse upphör vid mobilvy*/
+    } 
+} 
+
+@media (max-width: 600px) {
+    #introtext {
+        font-size: 0.8rem;
+    }  
+}   
