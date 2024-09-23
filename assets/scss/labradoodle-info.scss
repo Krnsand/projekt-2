@@ -34,27 +34,27 @@ $breakpoint-mobile: 600px;
 .exterior {
     width: 60%;
     margin: 60px auto 0 auto;
-    background-color: #ebeaea;
+    background-color: white;
     padding: 20px;
     border-radius: 20px;
 
     h1 {
-        color: $dark-red;
+        color: $primary-color;
         font-family: $font-title;
         font-size: 2.5rem;
         margin-bottom: 10px;
     }
 
-    h3 {
-        color: $rose-ebony;
+    h2 {
+        color: $dark-red;
         font-family: $font-title;
         font-size: 1.7rem;
         margin-top: 30px;
         
     }
     
-    h4 {
-        color: $dark-green;
+    h3 {
+        color: $rose-ebony;
         font-family: $font-title;
         font-size: 1.2rem;
     }
