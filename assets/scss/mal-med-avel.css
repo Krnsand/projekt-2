@@ -68,6 +68,9 @@
 .health-tests .health-condition .expand-button:focus {
   background-color: #c6b4b4;
 }
+.health-tests .health-condition .expand-button:active:focus {
+  background-color: #ebeaea;
+}
 .health-tests .health-condition .description {
   padding: 0 20px;
   display: none;

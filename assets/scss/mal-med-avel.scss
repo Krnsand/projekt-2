@@ -43,7 +43,6 @@ $breakpoint-mobile: 600px;
         font-family: $font-title;
         font-size: 2.5rem;
         margin-bottom: 20px;
-        
     }
 
     p {
@@ -87,6 +86,10 @@ $breakpoint-mobile: 600px;
 
         .expand-button:focus {
             background-color: #c6b4b4;
+        }
+
+        .expand-button:active:focus {
+            background-color: #ebeaea;
         }
 
         .description {
