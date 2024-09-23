@@ -27,26 +27,21 @@
   border-radius: 20px;
 }
 .exterior h1 {
-  color: #B38A4C;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-shadow: 0.5px 0.5px black;
-}
-.exterior h2 {
   color: #53131E;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+  text-shadow: 0.5px 0.5px black;
 }
 .exterior h3 {
-  color: #B38A4C;
+  color: #5A464C;
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   margin-top: 30px;
   text-shadow: 0.5px 0.5px black;
 }
 .exterior h4 {
-  color: #5A464C;
+  color: #22333B;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }

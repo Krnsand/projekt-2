@@ -39,21 +39,15 @@ $breakpoint-mobile: 600px;
     border-radius: 20px;
 
     h1 {
-        color: $primary-color;
+        color: $dark-red;
         font-family: $font-title;
         font-size: 2.5rem;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         text-shadow: 0.5px 0.5px black;
     }
 
-    h2 {
-        color: $dark-red;
-        font-family: $font-title;
-        font-size: 2rem;
-    }
-
     h3 {
-        color: $primary-color;
+        color: $rose-ebony;
         font-family: $font-title;
         font-size: 1.7rem;
         margin-top: 30px;
@@ -61,7 +55,7 @@ $breakpoint-mobile: 600px;
     }
     
     h4 {
-        color: $rose-ebony;
+        color: $dark-green;
         font-family: $font-title;
         font-size: 1.2rem;
     }
