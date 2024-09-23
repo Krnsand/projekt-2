@@ -1,6 +1,10 @@
 ![Responsive Mockup](https://github.com/Krnsand/projekt-2/blob/main/assets/images/readme-hero.png)
 
+<a href="https://krnsand.github.io/projekt-2/" target="_blank">Click to View Live Website</a>
+
 [Click to View Live Website](https://krnsand.github.io/projekt-2/)
+
+[Click to View Original Website](https://www.101labradoodles.com/)
 
 
 
