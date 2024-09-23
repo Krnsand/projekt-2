@@ -160,13 +160,13 @@ $breakpoint-mobile: 600px;
         min-height: 20rem;
 
         h2 {
-            color: $primary-color;
+            color: $dark-red;
             font-family: $font-title;
             font-size: 1.7rem;
             font-weight: 400;
             margin: 40px;
             text-wrap: none;
-            text-shadow: 0.5px 0.5px black;
+            // text-shadow: 0.5px 0.5px black;
         }
         
         p {
@@ -222,7 +222,7 @@ $breakpoint-mobile: 600px;
     }
     
     h3 {
-        color: $primary-color;
+        color: $secondary-color;
         font-family: $font-title;
         font-size: 1.5rem;
         max-width: 50%;
