@@ -328,46 +328,17 @@
       </div>
       <p>© 2020 by 101 Labradoodles</p>
     </footer>
-    <script>
-      document
-        .querySelector(".nav-link.dropdown-toggle")
-        .addEventListener("click", function (e) {
-          if (
-            e.target.tagName === "A" &&
-            e.target.getAttribute("href") === "intresseanmalan.html"
-          ) {
-            window.location.href = "intresseanmalan.html";
-          }
-        });
-    </script>
-    <script>
-      document
-        .querySelector(".nav-link.dropdown-toggle")
-        .addEventListener("click", function (e) {
-          if (
-            e.target.tagName === "A" &&
-            e.target.getAttribute("href") === "intresseanmalan.html"
-          ) {
-            window.location.href = "intresseanmalan.html";
-          }
-        });
-    </script>
-    <script>
-      window.onscroll = function () {
-        var header = document.getElementById("myHeader");
-        console.log(window.scrollY); // For debugging, see the scroll position in the console
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      };
-    </script>
+    <!-- JavaScript for expand button -->
+    <script src="assets/js/accordian.js"></script>
+    
+     <!-- JavaScript for onscroll functions (header and back-to-top arrow)-->
+    <script src="assets/js/onscroll.js"></script>
+    
    <!-- Bootstrap Bundle with Popper -->
    <script
-   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+zx2A4p+LlMF2b2F5H0UwLGp8xT4c"
-   crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+zx2A4p+LlMF2b2F5H0UwLGp8xT4c"
+    crossorigin="anonymous"
    ></script>
     <!-- Bootstrap script -->
     <script
@@ -375,82 +346,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- JavaScript for expand button -->
-    <script>
-      var buttons = document.getElementsByClassName("expand-button");
-      var currentActiveButton = null;
-      var currentActiveDescription = null;
-
-      for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function () {
-          // Get the icon element inside the clicked button
-          var icon = this.querySelector("i");
-          // If there is an active button and it's not the current one
-          if (currentActiveButton && currentActiveButton !== this) {
-            // Reset previous button and description
-            currentActiveButton.style.backgroundColor = "#ebeaea";
-            currentActiveDescription.style.display = "none";
-            // Reset the icon of the previous button
-            var prevIcon = currentActiveButton.querySelector("i");
-            prevIcon.classList.remove("fa-chevron-up");
-            prevIcon.classList.add("fa-chevron-down");
-          }
-
-          var content = this.nextElementSibling;
-
-          if (this === currentActiveButton) {
-            // If clicking the same button, toggle the description and background color
-            content.style.display =
-              content.style.display === "block" ? "none" : "block";
-            this.style.backgroundColor =
-              content.style.display === "block" ? "#ebeaea" : "#ebeaea";
-            // Toggle the icon
-            if (content.style.display === "block") {
-              icon.classList.remove("fa-chevron-down");
-              icon.classList.add("fa-chevron-up");
-            } else {
-              icon.classList.remove("fa-chevron-up");
-              icon.classList.add("fa-chevron-down");
-            }
-
-            currentActiveButton =
-              content.style.display === "block" ? this : null;
-            currentActiveDescription =
-              content.style.display === "block" ? content : null;
-          } else {
-            // Set the new button and description as active
-            this.style.backgroundColor = "#ebeaea";
-            content.style.display = "block";
-            // Change the icon to show an 'up' arrow when active
-            icon.classList.remove("fa-chevron-down");
-            icon.classList.add("fa-chevron-up");
-
-            currentActiveButton = this;
-            currentActiveDescription = content;
-          }
-        });
-      }
-    </script>
-        <script>
-          // Get the button:
-    let mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-        </script>
   </body>
 </html>
