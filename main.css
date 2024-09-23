@@ -15,7 +15,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   margin: auto;
-  text-shadow: 0.5px 0.5px black;
 }
 .current-puppies p {
   font-size: 1rem;
@@ -194,7 +193,6 @@
   max-width: 50%;
   text-align: center;
   margin: 60px auto;
-  text-shadow: 0.5px 0.5px black;
 }
 .about-labradoodle p {
   color: white;
@@ -206,21 +204,25 @@
   line-height: 1.7rem;
 }
 .about-labradoodle button {
-  background-color: #B38A4C;
-  color: white;
+  background-color: #caad82;
+  color: #53131E;
   width: 20rem;
   border: none;
   font-size: 1em;
   font-weight: 600;
   border-radius: 2em;
   padding: 15px 15px;
-  text-shadow: 0.5px 0.5px black;
 }
 .about-labradoodle button:hover {
-  background-color: #caad82;
+  background-color: #B38A4C;
+  color: white;
 }
 .about-labradoodle a {
   margin: 0 auto 60px auto;
+}
+
+.index-button {
+  padding: 1rem;
 }
 
 @media (max-width: 1200px) {
