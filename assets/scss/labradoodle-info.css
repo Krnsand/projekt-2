@@ -22,24 +22,24 @@
 .exterior {
   width: 60%;
   margin: 60px auto 0 auto;
-  background-color: #ebeaea;
+  background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
 .exterior h1 {
-  color: #53131E;
+  color: #B38A4C;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-.exterior h3 {
-  color: #5A464C;
+.exterior h2 {
+  color: #53131E;
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   margin-top: 30px;
 }
-.exterior h4 {
-  color: #22333B;
+.exterior h3 {
+  color: #5A464C;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
