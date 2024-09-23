@@ -242,8 +242,8 @@ $breakpoint-mobile: 600px;
     }
     
     button {
-        background-color: $primary-color;
-        color: white;
+        background-color: #caad82;
+        color: $dark-red;
         width: 20rem;
         border: none;
         font-size: 1em;
@@ -254,12 +254,17 @@ $breakpoint-mobile: 600px;
     }
 
     button:hover {
-        background-color: #caad82;
+        background-color: $primary-color;
+        color: white;
     }
 
     a {
         margin: 0 auto 60px auto;
     }
+}
+
+.index-button {
+    padding: 1rem;
 }
 
 @media (max-width: $breakpoint-large-screen) {
