@@ -23,39 +23,39 @@
 
 --- 
 
-- __Breakpoints__
+__Breakpoints__
 
-1. Vi har arbetat utifrån 3 breakpoints: 
-- large-screen aka Desktop 
-- 1200px, tablet 890px 
-- mobile 600px
+ Vi har arbetat utifrån 3 breakpoints: 
+  - large-screen aka Desktop 
+  - 1200px, tablet 890px 
+  - mobile 600px
 
-- __Dynamisk Funktionalitet__
+ __Dynamisk Funktionalitet__
 
-2. Vi har använt
-- JavaScript för att göra våran header genomskinlig vid skroll
-- JavaScript för att göra accordion menyer på Mål med Avel-sidan
-- JavaScript vi har använt JavaScript på våran hamburger meny för mindre skärmar
-- vi har använt JavaScript på vår "Back to top" chevron på långa sidor
-- CSS Animationer för bildspelet på Bokning Öppen-sidan
+ Vi har använt
+  - JavaScript för att göra våran header genomskinlig vid skroll
+  - JavaScript för att göra accordion menyer på Mål med Avel-sidan
+  - JavaScript vi har använt JavaScript på våran hamburger meny för mindre skärmar
+  - vi har använt JavaScript på vår "Back to top" chevron på långa sidor
+  - CSS Animationer för bildspelet på Bokning Öppen-sidan
 
-- __Ramverk__
+ __Ramverk__
 
-3. Vi har använt 
-- Bootstrap på nav-menyn 
-- Bootstrap på cardsen på första sidan
-- Bootstrap på formuläret på Intresseanmälan
+ Vi har använt 
+  - Bootstrap på nav-menyn 
+  - Bootstrap på cardsen på första sidan
+  - Bootstrap på formuläret på Intresseanmälan
 
-- __Tillgänglighet__
+ __Tillgänglighet__
 
-4. Vi har testat alla våra sidor med 
-- Lighthouse
-- Wave
-- W3C 
-- Vi har tabbat igenom alla element på alla sidor
-- Vi har kollat responsiviteten på alla olika skärmstorlekar i Inspektorn
-- Vi har testat alla knappar och länkar så att dom gör det dom ska.
+ Vi har testat alla våra sidor med 
+  - Lighthouse
+  - Wave
+  - W3C 
+  - Vi har tabbat igenom alla element på alla sidor
+  - Vi har kollat responsiviteten på alla olika skärmstorlekar i Inspektorn
+  - Vi har testat alla knappar och länkar så att dom gör det dom ska.
 
-- __Styling__
+ __Styling__
 
-5. Vi har använt oss av Sass. Dom flesta av våra sidor har en egen scss-fil som vi har använt, men headern är stylead i style.css då jag (Karin) inte fick igång sass direkt. Valpar och GDPR är stylead med vanlig css då Cattis har valt att använda sig av det.
+ Vi har använt oss av Sass. Dom flesta av våra sidor har en egen scss-fil som vi har använt, men headern är stylead i style.css då jag (Karin) inte fick igång sass direkt. Valpar och GDPR är stylead med vanlig css då Cattis har valt att använda sig av det.
